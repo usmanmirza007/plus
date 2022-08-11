@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
-import {SCREEN_WIDTH} from '../constant/dimensions';
+import {fontFamily, colors as colours} from '../constant';
 
 export const GradientButton = ({
   colors,
@@ -22,9 +22,7 @@ export const GradientButton = ({
     <TouchableOpacity onPress={onPress} style={[styles.btnStyle, btnStyle]}>
       <LinearGradient
         style={[styles.btnGradient, style]}
-        colors={
-          colors && colors.length > 0 ? colors : ['#8300E9', '#FFFFFF00']
-        }>
+        colors={colors && colors.length > 0 ? colors : colours.gradientPurple}>
         {leftIcon && (
           <Image
             source={leftIcon}
@@ -65,8 +63,8 @@ const styles = StyleSheet.create({
   },
   btnTxt: {
     color: '#fff',
-    fontSize: 16,
-    fontFamily: '700',
+    fontSize: 17,
+    fontFamily: fontFamily.poppins.medium,
   },
   icon: {
     width: 25,

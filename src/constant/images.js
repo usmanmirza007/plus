@@ -1,4 +1,4 @@
-const images = {
+export const images = {
   starLogo: require('../assets/images/star4.png'),
   family: require('../assets/images/family.webp'),
   mainImage: require('../assets/images/mainImage.jpg'),
@@ -7,4 +7,3 @@ const images = {
   movies: require('../assets/images/movies.webp'),
   production: require('../assets/images/production.webp'),
 };
-export default images;

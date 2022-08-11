@@ -1,0 +1,45 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "974b66074f1e265c0d203a4e2989c6120af3bc55"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "107454fb84957d1ea4bd4c0335377df253eb2258"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Medium.ttf",
+      "sha1": "6575dbf38e9e61beec498e2be61c89d43399db24"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "dd48971530e3f19f7067ad80ce6c215365fe7269"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "33cccb49029917a6175e7e7a754e296d518c2710"
+    },
+    {
+      "path": "src/assets/fonts/teko.bold.ttf",
+      "sha1": "34486436c1bbdb300705d85dd6b59ce275b5d1c9"
+    },
+    {
+      "path": "src/assets/fonts/teko.light.ttf",
+      "sha1": "463bdec046b5636186a57af677fb7f2ca27120e8"
+    },
+    {
+      "path": "src/assets/fonts/teko.medium.ttf",
+      "sha1": "703687fb7090a03119da866e3d8ac925dca0c097"
+    },
+    {
+      "path": "src/assets/fonts/teko.regular.ttf",
+      "sha1": "3f234cf28089f0e07bf8ad28337385c17b9ac3f9"
+    },
+    {
+      "path": "src/assets/fonts/teko.semibold.ttf",
+      "sha1": "d87f88c98ea7337b7d5361d524260a30efe2c031"
+    }
+  ]
+}
