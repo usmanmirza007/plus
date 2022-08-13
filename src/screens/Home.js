@@ -40,14 +40,17 @@ export const Home = () => {
 
       <View style={styles.separator} />
 
-      {whyChooseUs.map(({title, desc}, i) => (
+      {whyChooseUs.map(({image, title, desc}, i) => (
         <View style={styles.characteristicsView} key={i}>
-          <Text style={styles.subHeading}>{title}</Text>
+          <Image source={image} style={{height: 60, width: 60}} />
+          <Text style={[styles.subHeading, {marginTop: 15}]}>{title}</Text>
           <Text
             style={{
+              fontSize: 14,
               marginHorizontal: 20,
               textAlign: 'center',
-              fontFamily: fontFamily.poppins.regular,
+              fontFamily: fontFamily.poppins.medium,
+              color: colors.darkGray,
             }}>
             {desc}
           </Text>
@@ -97,7 +100,7 @@ const styles = StyleSheet.create({
     lineHeight: 37,
   },
   characteristicsView: {
-    marginTop: 15,
+    padding: 10,
     alignItems: 'center',
   },
   subHeading: {

@@ -6,9 +6,9 @@ export const colors = {
   white: '#ffffff',
   transparent: 'transparent',
   backgroundColor: '#fdfdfd',
-  darkGray: '#7B6F72',
+  darkGray: '#666666',
   gray: '#ADA4A5',
   lightGray: '#DDDADA',
   whitishGray: '#F7F8F8',
-  blueShadow: '#95ADFE'
-}
+  blueShadow: '#95ADFE',
+};
