@@ -17,4 +17,5 @@ export const images = {
   tubeIcon: require('../assets/images/tubeIcon.png'),
   tvIcon: require('../assets/images/tvIcon.png'),
   privacyIcon: require('../assets/images/privacyIcon.png'),
+  menu: require('../assets/images/menu.png'),
 };

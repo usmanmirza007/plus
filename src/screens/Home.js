@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity, StatusBar } from 'react-native';
 import React from 'react';
 import {
   images,
@@ -8,14 +8,36 @@ import {
   WINDOW_WIDTH,
   colors,
 } from '../constant';
-import {GradientButton} from '../components';
+import { GradientButton } from '../components';
+import Header  from '../components/Header';
+import { useNavigation } from '@react-navigation/native';
 
 export const Home = () => {
+  const navigation = useNavigation()
   return (
     <ScrollView style={styles.container}>
+      {/* <Header image={images.menu} /> */}
+      <StatusBar translucent barStyle={"light-content"} backgroundColor={ '#403FFC'} />
+    {/* <View style={{backgroundColor: '#fff', height: 100}}> */}
+
+      {/* <TouchableOpacity style={{ marginTop: 50, }} onPress={() => navigation.toggleDrawer()}> */}
+        <Image
+          source={images.menu}
+          resizeMode={'contain'}
+          style={{
+            width: 30,
+            height: 30,
+            
+            // tintColor: '#fff' ,
+            // alignSelf: 'center'
+          }}
+          />
+      {/* </TouchableOpacity> */}
+          {/* </View> */}
+      
       <Image style={styles.mainImage} source={images.mainImage} />
       <View style={styles.mainView}>
-        <Text style={[styles.heading, {color: colors.white}]}>
+        <Text style={[styles.heading, { color: colors.white }]}>
           BEST IPTV SERVER PROVIDER
         </Text>
         <Text
@@ -30,20 +52,21 @@ export const Home = () => {
           +154,000 TV Channels & VODs in 4K & Ultra HD Picture Quality
         </Text>
         <GradientButton
+          onPress={() => navigation.toggleDrawer()}
           text={'VIEW PLANS & FEATURES'}
-          btnStyle={{marginTop: 10}}
+          btnStyle={{ marginTop: 10 }}
         />
       </View>
-      <Text style={[styles.primaryHeading, {marginTop: 50, marginBottom: 15}]}>
+      <Text style={[styles.primaryHeading, { marginTop: 50, marginBottom: 15 }]}>
         WHY CHOOSE US
       </Text>
 
       <View style={styles.separator} />
 
-      {whyChooseUs.map(({image, title, desc}, i) => (
+      {whyChooseUs.map(({ image, title, desc }, i) => (
         <View style={styles.characteristicsView} key={i}>
-          <Image source={image} style={{height: 60, width: 60}} />
-          <Text style={[styles.subHeading, {marginTop: 15}]}>{title}</Text>
+          <Image source={image} style={{ height: 60, width: 60 }} />
+          <Text style={[styles.subHeading, { marginTop: 15 }]}>{title}</Text>
           <Text
             style={{
               fontSize: 14,
@@ -58,7 +81,7 @@ export const Home = () => {
       ))}
 
       <Text
-        style={[styles.primaryHeading, {marginTop: 70, marginHorizontal: 20}]}>
+        style={[styles.primaryHeading, { marginTop: 70, marginHorizontal: 20 }]}>
         WHICH SUBSCRIPTION PLAN IS RIGHT FOR YOU?
       </Text>
 
@@ -70,6 +93,7 @@ export const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
   },
   mainView: {
     width: WINDOW_WIDTH,
