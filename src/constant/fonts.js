@@ -7,10 +7,10 @@ export const fontFamily = {
     medium: 'Poppins-Medium',
   },
   teko: {
-    light: 'teko.light',
+    light: 'Teko-Light',
     bold: 'Teko-Bold',
-    semibold: 'teko.semiBold',
-    regular: 'teko.regular',
-    medium: 'teko.medium',
+    semibold: 'Teko-SemiBold',
+    regular: 'Teko-Regular',
+    medium: 'Teko-Medium',
   },
 };

@@ -1,4 +1,5 @@
-import {images} from "./images";
+import {images} from './images';
+import {colors} from "./colors";
 
 export const whyChooseUs = [
   {
@@ -30,5 +31,86 @@ export const whyChooseUs = [
     image: images.privacyIcon,
     title: '100% Satisfaction Guaranteed',
     desc: 'We offer you a fast IPTV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
+  },
+];
+
+export const pricingPlan = [
+  {
+    color: colors.primaryBlack,
+    duration: '1 MONTH',
+    plan: 'IPTV BASIC PLAN',
+    price: 14,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    color: colors.blue,
+    duration: '3 MONTHS',
+    plan: 'IPTV STANDARD PLAN',
+    price: 25,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    color: colors.purple,
+    duration: '6 MONTHS',
+    plan: 'IPTV SUPER PLAN',
+    price: 40,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    color: colors.green,
+    duration: '1 YEAR',
+    plan: 'IPTV PREMIUM PLAN',
+    price: 60,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+];
+export const feedbacks = [
+  {
+    text: 'I am extremely pleased with the service provided by star-itv and their excellent customer service team pointed me in the right direction when I did not completely understand how to set up the service on my Amazon Fire-stick with Stbemu app. Many Many THANKS..',
+    user: 'Ana Brown',
+  },
+  {
+    text: 'Super!!! Super communication with the support, IPTV login received in a few minutes with the explanation for the installation.',
+    user: 'Ana Brown',
+  },
+  {
+    text: 'Incredible service! If there’s ever an issue (very rarely!) the guys will get it fixed as quickly as possible and keep everyone updated at the same time – great quality of channels, 10/10 would recommend!',
+    user: 'Ana Brown',
   },
 ];

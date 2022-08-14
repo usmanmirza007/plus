@@ -1,11 +1,11 @@
 export const images = {
   starLogo: require('../assets/images/star4.png'),
-  family: require('../assets/images/family.webp'),
+  family: require('../assets/images/family.png'),
   mainImage: require('../assets/images/mainImage.jpg'),
   manAndChild: require('../assets/images/manAndChild.webp'),
   mobileDevices: require('../assets/images/mobileDevices.webp'),
   movies: require('../assets/images/movies.webp'),
-  production: require('../assets/images/production.webp'),
+  production: require('../assets/images/production.png'),
   addIcon: require('../assets/images/addIcon.png'),
   bulletIcon: require('../assets/images/bulletIcon.png'),
   checkIcon: require('../assets/images/checkIcon.png'),

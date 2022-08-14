@@ -9,4 +9,4 @@ export {
 export {fontFamily} from './fonts';
 export {colors} from './colors';
 export {images} from './images';
-export {whyChooseUs} from './utils';
+export {whyChooseUs, pricingPlan} from './utils';
