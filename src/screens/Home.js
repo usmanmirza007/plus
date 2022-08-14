@@ -4,7 +4,6 @@ import {
   View,
   ScrollView,
   Image,
-  TouchableOpacity,
   StatusBar,
 } from 'react-native';
 import React from 'react';
@@ -13,13 +12,12 @@ import {
   whyChooseUs,
   pricingPlan,
   feedbacks,
-  faqs,
   fontFamily,
   WINDOW_HEIGHT,
   WINDOW_WIDTH,
   colors,
 } from '../constant';
-import {GradientButton, FAQ, Button} from '../components';
+import {GradientButton, FAQsComponent, Button, GetStarted} from '../components';
 import Header from '../components/Header';
 import {useNavigation} from '@react-navigation/native';
 import commonStyle from '../constant/commonStyle';
@@ -374,46 +372,8 @@ export const Home = () => {
             resizeMode: 'contain',
           }}
         />
-        <Image
-          source={images.manAndChild}
-          style={{
-            height: WINDOW_HEIGHT * 0.55,
-            width: WINDOW_WIDTH - 20,
-            resizeMode: 'contain',
-            marginTop: 50,
-          }}
-        />
       </View>
-      <View style={{padding: 10}}>
-        <Text
-          style={{
-            color: colors.blue,
-            fontFamily: fontFamily.poppins.semibold,
-            fontSize: 25,
-          }}>
-          FAQ
-        </Text>
-        <View
-          style={{
-            width: 40,
-            height: 4,
-            backgroundColor: colors.lightGreen,
-            marginVertical: 15,
-          }}
-        />
-        <Text
-          style={{
-            fontFamily: fontFamily.poppins.bold,
-            fontSize: 21,
-            color: colors.primaryBlack,
-          }}>
-          If you still have any questions, please read the section below or
-          contact us directly.
-        </Text>
-        {faqs.map((faq, i) => (
-          <FAQ key={i} question={faq.question} answer={faq.answer} />
-        ))}
-      </View>
+      <FAQsComponent />
       <View style={{marginTop: 50}}>
         {feedbacks.map((feedback, i) => (
           <View
@@ -445,51 +405,7 @@ export const Home = () => {
           </View>
         ))}
       </View>
-      <View style={{marginTop: 20, marginBottom: 100, padding: 10}}>
-        <Text
-          style={{
-            fontFamily: fontFamily.poppins.semibold,
-            fontSize: 25,
-            color: colors.secondaryPurple,
-          }}>
-          Ready to get started?
-        </Text>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-evenly',
-          }}>
-          <Button
-            style={{
-              backgroundColor: colors.secondaryPurple,
-              ...commonStyle.shadow,
-            }}
-            text={'SUBSCRIBE NOW'}
-            textStyle={{fontSize: 13, fontFamily: fontFamily.poppins.bold}}
-            rightIcon={images.playIcon}
-            rightIconStyle={{height: 13, width: 13}}
-          />
-          <Button
-            style={{
-              backgroundColor: colors.white,
-              ...commonStyle.shadow,
-            }}
-            text={'CONTACT US'}
-            textStyle={{
-              fontSize: 13,
-              fontFamily: fontFamily.poppins.bold,
-              color: colors.secondaryPurple,
-            }}
-            rightIcon={images.playIcon}
-            rightIconStyle={{
-              height: 13,
-              width: 13,
-              tintColor: colors.secondaryPurple,
-            }}
-          />
-        </View>
-      </View>
+      <GetStarted />
     </ScrollView>
   );
 };
