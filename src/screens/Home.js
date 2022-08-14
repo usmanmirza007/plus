@@ -12,16 +12,17 @@ import {
   images,
   whyChooseUs,
   pricingPlan,
+  feedbacks,
+  faqs,
   fontFamily,
   WINDOW_HEIGHT,
   WINDOW_WIDTH,
   colors,
 } from '../constant';
-import {GradientButton} from '../components';
+import {GradientButton, FAQ, Button} from '../components';
 import Header from '../components/Header';
 import {useNavigation} from '@react-navigation/native';
 import commonStyle from '../constant/commonStyle';
-import {feedbacks} from '../constant/utils';
 
 export const Home = () => {
   const navigation = useNavigation();
@@ -187,24 +188,15 @@ export const Home = () => {
                 </View>
               ))}
             </View>
-            <TouchableOpacity
+            <Button
               style={{
                 marginTop: 25,
                 marginBottom: 15,
                 backgroundColor: plan.color,
-                alignSelf: 'center',
-                borderRadius: 35,
-                padding: 12,
-              }}>
-              <Text
-                style={{
-                  fontFamily: fontFamily.poppins.medium,
-                  fontSize: 14,
-                  color: colors.white,
-                }}>
-                SUBSCRIBE NOW
-              </Text>
-            </TouchableOpacity>
+              }}
+              text={'SUBSCRIBE NOW'}
+              textStyle={{fontSize: 14}}
+            />
           </View>
         ))}
       </View>
@@ -225,36 +217,7 @@ export const Home = () => {
           }}>
           How to Setup IPTV on your Device
         </Text>
-        <TouchableOpacity
-          style={{
-            margin: 10,
-            backgroundColor: colors.green,
-            alignSelf: 'center',
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderRadius: 35,
-            padding: 12,
-            flexDirection: 'row',
-          }}>
-          <Text
-            style={{
-              fontFamily: fontFamily.poppins.medium,
-              fontSize: 17,
-              color: colors.white,
-            }}>
-            TUTORIAL
-          </Text>
-          <Image
-            source={images.roundedPlayIcon}
-            style={{
-              height: 17,
-              width: 17,
-              resizeMode: 'contain',
-              tintColor: colors.white,
-              marginLeft: 5,
-            }}
-          />
-        </TouchableOpacity>
+        <Button text="TUTORIAL" rightIcon={images.roundedPlayIcon} />
       </View>
       <View
         style={{
@@ -447,6 +410,9 @@ export const Home = () => {
           If you still have any questions, please read the section below or
           contact us directly.
         </Text>
+        {faqs.map((faq, i) => (
+          <FAQ key={i} question={faq.question} answer={faq.answer} />
+        ))}
       </View>
       <View style={{marginTop: 50}}>
         {feedbacks.map((feedback, i) => (
@@ -478,6 +444,51 @@ export const Home = () => {
             </Text>
           </View>
         ))}
+      </View>
+      <View style={{marginTop: 20, marginBottom: 100, padding: 10}}>
+        <Text
+          style={{
+            fontFamily: fontFamily.poppins.semibold,
+            fontSize: 25,
+            color: colors.secondaryPurple,
+          }}>
+          Ready to get started?
+        </Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-evenly',
+          }}>
+          <Button
+            style={{
+              backgroundColor: colors.secondaryPurple,
+              ...commonStyle.shadow,
+            }}
+            text={'SUBSCRIBE NOW'}
+            textStyle={{fontSize: 13, fontFamily: fontFamily.poppins.bold}}
+            rightIcon={images.playIcon}
+            rightIconStyle={{height: 13, width: 13}}
+          />
+          <Button
+            style={{
+              backgroundColor: colors.white,
+              ...commonStyle.shadow,
+            }}
+            text={'CONTACT US'}
+            textStyle={{
+              fontSize: 13,
+              fontFamily: fontFamily.poppins.bold,
+              color: colors.secondaryPurple,
+            }}
+            rightIcon={images.playIcon}
+            rightIconStyle={{
+              height: 13,
+              width: 13,
+              tintColor: colors.secondaryPurple,
+            }}
+          />
+        </View>
       </View>
     </ScrollView>
   );

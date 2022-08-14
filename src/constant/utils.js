@@ -1,5 +1,5 @@
 import {images} from './images';
-import {colors} from "./colors";
+import {colors} from './colors';
 
 export const whyChooseUs = [
   {
@@ -107,10 +107,33 @@ export const feedbacks = [
   },
   {
     text: 'Super!!! Super communication with the support, IPTV login received in a few minutes with the explanation for the installation.',
-    user: 'Ana Brown',
+    user: 'David McCan',
   },
   {
     text: 'Incredible service! If there’s ever an issue (very rarely!) the guys will get it fixed as quickly as possible and keep everyone updated at the same time – great quality of channels, 10/10 would recommend!',
-    user: 'Ana Brown',
+    user: 'Daniel Lyttle',
+  },
+];
+
+export const faqs = [
+  {
+    question: 'How to setup IPTV on my device?',
+    answer:
+      'It is very easy to connect IPTV. Follow the tutorial page, chat with us or send an email, our agents will help you set it up on your device',
+  },
+  {
+    question: 'How long will it take to receive my IPTV login info?',
+    answer:
+      'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process',
+  },
+  {
+    question: 'What devices does IPTV support?',
+    answer:
+      'Our IPTV server support all the TV boxes :Android, Smart Tv, IOS, Windows and Mac OS, Mag Box, Firestick …, All devices can be supported on request',
+  },
+  {
+    question: 'What content do you supply?',
+    answer:
+      'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
   },
 ];
