@@ -36,7 +36,8 @@ export const whyChooseUs = [
 
 export const pricingPlan = [
   {
-    color: colors.primaryBlack,
+    homeColor: colors.primaryBlack,
+    pricingColor: colors.secondaryPurple,
     duration: '1 MONTH',
     plan: 'IPTV BASIC PLAN',
     price: 14,
@@ -52,7 +53,8 @@ export const pricingPlan = [
     ],
   },
   {
-    color: colors.blue,
+    homeColor: colors.blue,
+    pricingColor: colors.lightGreen,
     duration: '3 MONTHS',
     plan: 'IPTV STANDARD PLAN',
     price: 25,
@@ -68,7 +70,8 @@ export const pricingPlan = [
     ],
   },
   {
-    color: colors.purple,
+    homeColor: colors.purple,
+    pricingColor: colors.primaryPurple,
     duration: '6 MONTHS',
     plan: 'IPTV SUPER PLAN',
     price: 40,
@@ -84,7 +87,8 @@ export const pricingPlan = [
     ],
   },
   {
-    color: colors.green,
+    homeColor: colors.green,
+    pricingColor: colors.yellow,
     duration: '1 YEAR',
     plan: 'IPTV PREMIUM PLAN',
     price: 60,
@@ -119,21 +123,62 @@ export const faqs = [
   {
     question: 'How to setup IPTV on my device?',
     answer:
-      'It is very easy to connect IPTV. Follow the tutorial page, chat with us or send an email, our agents will help you set it up on your device',
+      'It is very easy to connect IPTV. Follow the tutorial page, chat with us or send an email, our agents will help you set it up on your device.',
   },
   {
     question: 'How long will it take to receive my IPTV login info?',
     answer:
-      'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process',
+      'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process.',
   },
   {
     question: 'What devices does IPTV support?',
     answer:
-      'Our IPTV server support all the TV boxes :Android, Smart Tv, IOS, Windows and Mac OS, Mag Box, Firestick …, All devices can be supported on request',
+      'Our IPTV server support all the TV boxes :Android, Smart Tv, IOS, Windows and Mac OS, Mag Box, Firestick …, All devices can be supported on request.',
   },
   {
     question: 'What content do you supply?',
     answer:
       'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
+  },
+];
+
+export const faqs2 = [
+  {
+    question: 'What does the package include?',
+    answer: 'When you subscribe to star-itv, you get login credentials to IPTV server with instructions for how to setup it on your device.',
+  },
+  {
+    question: 'What is the typical response time for a support question?',
+    answer: 'Since you report us a support question we try to make our best to find out what is going on, depending on the case it could take more or less time, however a standard time could be minutes.',
+  },
+  {
+    question: 'What devices do you support?',
+    answer: 'We support all the IPTV boxes and android devices, Including MAG boxes and Formuler.',
+  },
+  {
+    question: 'How long will it take to receive my order?',
+    answer: 'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process.',
+  },
+  {
+    question: 'What content do you supply?',
+    answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
+  },
+];
+
+export const subscriptionRewards = [
+  {
+    image: images.videoIcon,
+    title: 'IPTV Premium Streaming',
+    desc: 'Your IPTV subscription offers you live premium worldwide TV channels. No need to look anywhere else, everything is there: Sport, Entertainment, Kids Channels, News, VOD, Films, TV series.',
+  },
+  {
+    image: images.rewardIcon,
+    title: '100% Satisfaction Guaranteed',
+    desc: 'We offer you a fast IPTV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
+  },
+  {
+    image: images.roundedBulbIcon,
+    title: 'WORLD CLASS SUPPORT',
+    desc: 'We offer in-depth tutorials and client support in live chat to make installation, and streaming amazingly quick and simple, no matter where you are in the world.',
   },
 ];

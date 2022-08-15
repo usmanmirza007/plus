@@ -1,0 +1,5 @@
+export {Home} from './Home'
+export {ChannelList} from './ChannelList'
+export {ContactUs} from './ContactUs'
+export {Pricing} from './Pricing'
+export {FAQ} from './FAQ'

@@ -6,7 +6,8 @@ import {
   CollapseBody,
 } from 'accordion-collapse-react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-const ChannelList = () => {
+import { Header, Footer } from '../components';
+export const ChannelList = () => {
   const [collapseState, setCollapseState] = useState(false);
 
   const data = [
@@ -145,14 +146,15 @@ const ChannelList = () => {
 
   ]
   return (
-    <View>
+    <>
+      <Header />
       <ScrollView>
 
       <View style={{ backgroundColor: '#8d46c5', height: 100, alignItems: 'center' }}>
         <Text style={{ alignSelf: 'center', fontSize: 24, fontWeight: '700', marginTop: 40, color: '#fff' }}>Channel List</Text>
       </View>
       <Text style={{ marginHorizontal: 25, fontSize: 15, marginTop: 10, color: 'grey', textAlign: 'center' }}>All channels with this icon on the list support the time shift</Text>
-      <View style={{ backgroundColor: '#fff', elevation: 3, marginTop: 10, marginHorizontal: 25 }}>
+      <View style={{ backgroundColor: '#fff', elevation: 3, marginTop: 10, marginHorizontal: 25, marginBottom: 50 }}>
 
         {data.map((item, index) => {
           return (
@@ -221,28 +223,11 @@ const ChannelList = () => {
           )
         })}
       </View>
-      <View style={{ backgroundColor: '#000000', paddingHorizontal: 10,marginBottom: 0, paddingVertical:10, marginTop: 25 }}>
-        <Text style={{color: '#fff', fontSize: 20, fontWeight: '700' }}>CONTACT US</Text>
-        <Text style={{color: '#fff', marginTop: 10}}>admin@star-iptv.com</Text>
-        <Text style={{color: '#fff'}}>We reply within 1h</Text>
-        <Text style={{color: '#fff', fontSize: 20, marginTop: 10, fontWeight: '700' }}>MAIN MENU</Text>
-        <Text style={{color: '#fff', marginTop: 10}}>Home</Text>
-        <Text style={{color: '#fff'}}>Subscription Plans</Text>
-        <Text style={{color: '#fff'}}>Contact Us</Text>
-        <Text style={{color: '#fff'}}>Terms and Conditions</Text>
-        <Text style={{color: '#fff'}}>Privacy Policy</Text>
-        <Text style={{color: '#fff', fontSize: 20, marginTop: 10, fontWeight: '700' }}>MAIN MENU</Text>
-        <Text style={{color: '#fff', marginTop: 10}}>Tutorial</Text>
-        <Text style={{color: '#fff'}}>FAQ</Text>
-        <Text style={{color: '#fff'}}>Contact Us</Text>
-        <Text style={{color: '#fff'}}>© 2021 star-iPtv. All Rights Reserved</Text>
-      </View>
+      <Footer />
       </ScrollView>
 
-    </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({})
-
-export default ChannelList;

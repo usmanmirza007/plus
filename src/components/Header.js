@@ -1,44 +1,82 @@
 import React from 'react';
-import { Text, StatusBar, View, Image, TouchableOpacity } from 'react-native';
-import { getStatusBarHeight } from 'react-native-status-bar-height';
-import { useNavigation } from '@react-navigation/native';
+import {Text, StatusBar, View, Image, TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {
+  colors,
+  fontFamily,
+  images,
+  STATUS_BAR_HEIGHT,
+  WINDOW_HEIGHT,
+  WINDOW_WIDTH,
+} from '../constant';
 
-const Header = ({ title, image }) => {
-  var navigation = useNavigation();
+export const Header = () => {
+  const navigation = useNavigation();
 
   return (
-    <View
-    style={{
-      // marginTop: StatusBar.currentHeight + getStatusBarHeight(true),
-      flexDirection: 'row',
-      justifyContent: 'center',
-      backgroundColor: '#403FFC',
-      alignItems: 'center',
-      height: 100,
-    }}>
-      <StatusBar translucent barStyle={"light-content"} backgroundColor={ '#403FFC'} />
-
-      <TouchableOpacity style={{ position: 'absolute', left: 20, top: 50 }} onPress={() => navigation.toggleDrawer()}>
+    <>
+      <StatusBar
+        barStyle={'light-content'}
+        backgroundColor={colors.primaryBlue}
+      />
+      <View
+        style={{
+          marginTop: STATUS_BAR_HEIGHT,
+          backgroundColor: colors.primaryBlue,
+          flexDirection: 'row',
+          alignItems: 'center',
+          height: 40,
+          paddingHorizontal: 10,
+        }}>
         <Image
-          source={image}
-          resizeMode={'contain'}
+          source={images.emailIcon}
           style={{
-            width: 30,
-            height: 30,
-            tintColor: '#fff' ,
-            alignSelf: 'center'
+            height: 18,
+            width: 24,
+            resizeMode: 'contain',
+            tintColor: colors.white,
           }}
         />
-      </TouchableOpacity>
-      <View>
         <Text
-          style={{ color: '#fff' , fontSize: 18 }}
-        >
-          {title}
+          style={{
+            fontSize: 12,
+            fontFamily: fontFamily.poppins.semibold,
+            color: colors.white,
+            marginLeft: 5,
+          }}>
+          admin@star-iptv.com
         </Text>
       </View>
-    </View>
-  )
-}
-
-export default Header
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          backgroundColor: colors.white,
+          alignItems: 'center',
+          height: 70,
+          paddingHorizontal: 20,
+        }}>
+        <Image
+          source={images.starLogo}
+          resizeMode={'contain'}
+          style={{
+            width: WINDOW_WIDTH * 0.2,
+            height: WINDOW_HEIGHT * 0.1,
+          }}
+        />
+        <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+          <Image
+            source={images.menu}
+            resizeMode={'contain'}
+            style={{
+              width: 30,
+              height: 30,
+              tintColor: colors.primaryBlack,
+              alignSelf: 'center',
+            }}
+          />
+        </TouchableOpacity>
+      </View>
+    </>
+  );
+};

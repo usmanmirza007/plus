@@ -19,4 +19,8 @@ export const images = {
   privacyIcon: require('../assets/images/privacyIcon.png'),
   menu: require('../assets/images/menu.png'),
   minusIcon: require('../assets/images/minusIcon.png'),
+  whatsapp: require('../assets/images/whatsapp.png'),
+  rewardIcon: require('../assets/images/rewardIcon.png'),
+  roundedBulbIcon: require('../assets/images/roundedBulbIcon.png'),
+  videoIcon: require('../assets/images/videoIcon.png'),
 };

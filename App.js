@@ -5,9 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import SideMenu from './src/navigation/SideMenu';
-import {Home} from './src/screens/Home';
-import ContactUs from './src/screens/ContactUs';
-import ChannelList from './src/screens/ChannelList';
+import {Home, ContactUs, ChannelList, Pricing, FAQ} from './src/screens';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -23,6 +21,11 @@ const DrawerNavigation = () => (
       options={{headerShown: false}}
     />
     <Drawer.Screen
+      name="Pricing"
+      component={Pricing}
+      options={{headerShown: false}}
+    />
+    <Drawer.Screen
       name="ContactUs"
       component={ContactUs}
       options={{headerShown: false}}
@@ -30,6 +33,11 @@ const DrawerNavigation = () => (
     <Drawer.Screen
       name="ChannelList"
       component={ChannelList}
+      options={{headerShown: false}}
+    />
+    <Drawer.Screen
+      name="FAQ"
+      component={FAQ}
       options={{headerShown: false}}
     />
   </Drawer.Navigator>

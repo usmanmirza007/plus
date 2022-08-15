@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Image, Text, View} from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import {
   colors,
   fontFamily,
@@ -9,9 +10,9 @@ import {
 } from '../constant';
 import {FAQs} from './FAQs';
 
-export const FAQsComponent = () => {
+export const FAQsComponent = ({backgroundColor, textColor}) => {
   return (
-    <View style={{padding: 10}}>
+    <View style={{padding: 10, paddingBottom: 30, backgroundColor: backgroundColor || 'transparent'}}>
       <Image
         source={images.manAndChild}
         style={{
@@ -23,7 +24,7 @@ export const FAQsComponent = () => {
       />
       <Text
         style={{
-          color: colors.blue,
+          color: textColor || colors.blue,
           fontFamily: fontFamily.poppins.semibold,
           fontSize: 25,
         }}>
@@ -41,7 +42,7 @@ export const FAQsComponent = () => {
         style={{
           fontFamily: fontFamily.poppins.bold,
           fontSize: 21,
-          color: colors.primaryBlack,
+          color: textColor || colors.primaryBlack,
         }}>
         If you still have any questions, please read the section below or
         contact us directly.

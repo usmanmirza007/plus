@@ -37,7 +37,7 @@ export const Button = ({
               width: 17,
               resizeMode: 'contain',
               tintColor: colors.white,
-              marginLeft: 5,
+              marginRight: 5,
             },
             leftIconStyle,
           ]}
