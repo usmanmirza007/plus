@@ -57,11 +57,11 @@ export const Header = () => {
           paddingHorizontal: 20,
         }}>
         <Image
-          source={images.starLogo}
+          source={images.appLogo}
           resizeMode={'contain'}
           style={{
             width: WINDOW_WIDTH * 0.2,
-            height: WINDOW_HEIGHT * 0.1,
+            height: WINDOW_HEIGHT * 0.08,
           }}
         />
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>

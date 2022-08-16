@@ -1,16 +1,16 @@
 import React from 'react';
-import {StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
-import {colors, fontFamily} from '../constant';
+import { StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
+import { colors, fontFamily } from '../constant';
 
 export const Button = ({
   style = {},
-  text = '',
+  text,
   textStyle = {},
   rightIcon,
   rightIconStyle = {},
-  lefIcon,
+  leftIcon,
   leftIconStyle = {},
-  onPress = () => {},
+  onPress = () => { },
 }) => {
   return (
     <TouchableOpacity
@@ -28,32 +28,34 @@ export const Button = ({
         },
         style,
       ]}>
-      {lefIcon && (
+      {leftIcon && (
         <Image
-          source={lefIcon}
+          source={leftIcon}
           style={[
             {
               height: 17,
               width: 17,
               resizeMode: 'contain',
               tintColor: colors.white,
-              marginRight: 5,
+              marginRight: text ? 5 : 0,
             },
             leftIconStyle,
           ]}
         />
       )}
-      <Text
-        style={[
-          {
-            fontFamily: fontFamily.poppins.medium,
-            fontSize: 17,
-            color: colors.white,
-          },
-          textStyle,
-        ]}>
-        {text}
-      </Text>
+      {text && (
+        <Text
+          style={[
+            {
+              fontFamily: fontFamily.poppins.medium,
+              fontSize: 17,
+              color: colors.white,
+            },
+            textStyle,
+          ]}>
+          {text}
+        </Text>
+      )}
       {rightIcon && (
         <Image
           source={rightIcon}
@@ -63,7 +65,7 @@ export const Button = ({
               width: 17,
               resizeMode: 'contain',
               tintColor: colors.white,
-              marginLeft: 5,
+              marginLeft: text ? 5: 0,
             },
             rightIconStyle,
           ]}

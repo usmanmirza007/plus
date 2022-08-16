@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, StatusBar, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { View, StatusBar, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
 
 import { ScrollView } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
-import { colors, fontFamily, STATUS_BAR_HEIGHT } from '../constant';
+import { colors, fontFamily, STATUS_BAR_HEIGHT, images, WINDOW_WIDTH, WINDOW_HEIGHT } from '../constant';
 
 const SideMenu = () => {
   const navigation = useNavigation()
@@ -15,6 +15,16 @@ const SideMenu = () => {
         barStyle="light-content"
         backgroundColor={colors.primaryBlue}
       />
+      <Image
+          source={images.appLogo}
+          style={{
+            width: 100,
+            height: 100,
+            resizeMode: 'contain',
+            alignSelf: 'center',
+            marginTop: 50,
+          }}
+        />
       <ScrollView style={{}}>
         <TouchableOpacity onPress={() => navigation.navigate('Home')} style={{ marginLeft: 15, marginTop: 20 + STATUS_BAR_HEIGHT }}>
           <Text style={styles.itemText}>Home</Text>

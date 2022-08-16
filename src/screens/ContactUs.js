@@ -121,7 +121,7 @@ export const ContactUs = () => {
                   marginLeft: 0,
                 }}
                 text={'Contact Us'}
-                lefIcon={images.whatsapp}
+                leftIcon={images.whatsapp}
               />
             </View>
           </View>

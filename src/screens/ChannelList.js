@@ -7,6 +7,8 @@ import {
 } from 'accordion-collapse-react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Header, Footer } from '../components';
+import { colors, fontFamily, images, WINDOW_HEIGHT } from '../constant';
+import commonStyle from '../constant/commonStyle';
 export const ChannelList = () => {
   const [collapseState, setCollapseState] = useState(false);
 
@@ -148,82 +150,73 @@ export const ChannelList = () => {
   return (
     <>
       <Header />
-      <ScrollView>
+      <ScrollView style={{ backgroundColor: colors.white }}>
 
-      <View style={{ backgroundColor: '#8d46c5', height: 100, alignItems: 'center' }}>
-        <Text style={{ alignSelf: 'center', fontSize: 24, fontWeight: '700', marginTop: 40, color: '#fff' }}>Channel List</Text>
-      </View>
-      <Text style={{ marginHorizontal: 25, fontSize: 15, marginTop: 10, color: 'grey', textAlign: 'center' }}>All channels with this icon on the list support the time shift</Text>
-      <View style={{ backgroundColor: '#fff', elevation: 3, marginTop: 10, marginHorizontal: 25, marginBottom: 50 }}>
+        <View style={{ backgroundColor: '#8d46c5', height: WINDOW_HEIGHT * 0.22, justifyContent: 'center' }}>
+          <Text style={{ textAlign: 'center', fontSize: 38, fontFamily: fontFamily.poppins.semibold, color: colors.white }}>Channel List</Text>
+        </View>
+        <Image source={images.dotCircle} style={{ width: 50, height: 50, resizeMode: 'contain', alignSelf: 'center', marginTop: 10 }} />
+        <Text style={{ marginHorizontal: 20, fontSize: 14, fontFamily: fontFamily.poppins.regular, marginTop: 20, color: colors.darkGray, textAlign: 'center' }}>All channels with this icon on the list support the time shift</Text>
 
-        {data.map((item, index) => {
-          return (
-            <Collapse
-              onToggle={() => setCollapseState(!collapseState)}
-              style={{
-                marginTop: 9,
-                // backgroundColor: 'red',
-                // marginHorizontal: 25,
-                // elevation: 3
-                padding: 5,
-                marginLeft: 10
-              }}>
-              <CollapseHeader
+        <View style={{ backgroundColor: '#F6F6F6', marginTop: 40, marginHorizontal: 10, marginBottom: 50, ...commonStyle.shadow }}>
+          {data.map((item, index) => {
+            return (
+              <Collapse
+                onToggle={() => setCollapseState(!collapseState)}
                 style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-between',
+                  marginTop: 9,
+                  padding: 10,
+                  marginHorizontal: 10,
+                  borderBottomWidth: 1,
+                  borderColor: colors.gray,
                 }}>
-                <View style={{ alignSelf: 'center' }}>
-                  {collapseState ? (
+                <CollapseHeader
+                  style={{
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                  }}>
+                  <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+                    <Image source={images.playIcon} style={{ height: 10, width: 15, resizeMode: 'contain', tintColor: collapseState ? colors.purple : colors.black, transform: [{ rotate: collapseState ? '-90deg': '0deg' }] }} />
                     <Text
                       style={{
-                        fontFamily: 'Montserrat-SemiBold',
+                        fontFamily: fontFamily.poppins.semibold,
                         fontSize: 14,
-                        color: '#000',
+                        color: collapseState ? colors.purple : colors.primaryBlack,
+                        marginLeft: 10,
                       }}>
-                      - {item.name}
+                      {item.name}
                     </Text>
-                  ) : (
-                    <Text
-                      style={{
-                        fontFamily: 'Montserrat-SemiBold',
-                        fontSize: 14,
-                        color: "#000",
-                      }}>
-                      + {item.name}
-                    </Text>
-                  )}
-                </View>
-              </CollapseHeader>
-              <CollapseBody>
-                {item.data.map((chl, index) => {
-                  return (
-                    <View
-                      style={{
-                        marginTop: 10,
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                      }}>
-                      <Text
+                  </View>
+                </CollapseHeader>
+                <CollapseBody>
+                  {item.data.map((chl, index) => {
+                    return (
+                      <View
                         style={{
-                          fontSize: 10,
-                          fontFamily: 'Montserrat-Regular',
-                          color: "#000",
-                          marginLeft: 8,
+                          marginTop: 10,
+                          flexDirection: 'row',
+                          alignItems: 'center',
                         }}>
-                        {chl}
-                      </Text>
-                    </View>
-                  )
-                })}
+                        <Text
+                          style={{
+                            fontFamily: fontFamily.poppins.regular,
+                            fontSize: 14,
+                            color: colors.darkGray,
+                            marginLeft: 8,
+                          }}>
+                          {chl}
+                        </Text>
+                      </View>
+                    )
+                  })}
 
-              </CollapseBody>
-            </Collapse>
+                </CollapseBody>
+              </Collapse>
 
-          )
-        })}
-      </View>
-      <Footer />
+            )
+          })}
+        </View>
+        <Footer />
       </ScrollView>
 
     </>

@@ -1,4 +1,6 @@
 export const images = {
+  appLogo1: require('../assets/images/appLogo.jpeg'),
+  appLogo: require('../assets/images/appLogo.png'),
   starLogo: require('../assets/images/star4.png'),
   family: require('../assets/images/family.png'),
   mainImage: require('../assets/images/mainImage.jpg'),
@@ -20,7 +22,9 @@ export const images = {
   menu: require('../assets/images/menu.png'),
   minusIcon: require('../assets/images/minusIcon.png'),
   whatsapp: require('../assets/images/whatsapp.png'),
-  rewardIcon: require('../assets/images/rewardIcon.png'),
-  roundedBulbIcon: require('../assets/images/roundedBulbIcon.png'),
-  videoIcon: require('../assets/images/videoIcon.png'),
+  rewardIcon: require('../assets/images/rewardIcon.webp'),
+  roundedBulbIcon: require('../assets/images/roundedBulbIcon.webp'),
+  videoIcon: require('../assets/images/videoIcon.webp'),
+  whatsappLogo: require('../assets/images/whatsappLogo.png'),
+  dotCircle: require('../assets/images/dotCircle.png'),
 };
