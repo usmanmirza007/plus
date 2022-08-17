@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { colors, fontFamily, images, WINDOW_WIDTH } from '../constant';
 import commonStyle from '../constant/commonStyle';
 
-export const FAQ = ({ question, answer, faqStyle, iconStyle }) => {
+export const CustomCollapse = ({ title, content, style, iconStyle }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <View
@@ -14,7 +14,7 @@ export const FAQ = ({ question, answer, faqStyle, iconStyle }) => {
         paddingHorizontal: 25,
         paddingVertical: 20,
         ...commonStyle.shadow,
-      }, faqStyle]}>
+      }, style]}>
       <TouchableOpacity
         onPress={() => setToggle(!toggle)}
         style={{
@@ -29,7 +29,7 @@ export const FAQ = ({ question, answer, faqStyle, iconStyle }) => {
             fontSize: 15,
             maxWidth: WINDOW_WIDTH * 0.7,
           }}>
-          {question}
+          {title}
         </Text>
         <Image
           source={!toggle ? images.addIcon : images.minusIcon}
@@ -44,7 +44,7 @@ export const FAQ = ({ question, answer, faqStyle, iconStyle }) => {
             fontSize: 15,
             marginVertical: 20,
           }}>
-          {answer}
+          {content}
         </Text>
       )}
     </View>

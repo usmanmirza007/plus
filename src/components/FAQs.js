@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {faqs} from '../constant';
-import {FAQ} from './FAQ';
+import {CustomCollapse} from './CustomCollapse';
 
 export const FAQs = ({data = faqs, faqStyle, iconStyle}) => {
   return (
     <>
       {data.map((faq, i) => (
-        <FAQ key={i} question={faq.question} answer={faq.answer} faqStyle={faqStyle} iconStyle={iconStyle}/>
+        <CustomCollapse key={i} title={faq.question} content={faq.answer} style={faqStyle} iconStyle={iconStyle}/>
       ))}
     </>
   );

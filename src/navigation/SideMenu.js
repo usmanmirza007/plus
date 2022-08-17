@@ -34,8 +34,8 @@ const SideMenu = () => {
           <Text style={styles.itemText}>Pricing</Text>
         </TouchableOpacity>
         <View style={styles.separator} /> 
-        <TouchableOpacity onPress={() => navigation.navigate('')} style={{ marginLeft: 15, marginTop: 20  }}>
-          <Text style={styles.itemText}>Tutorial</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Tutorial')} style={{ marginLeft: 15, marginTop: 20  }}>
+          <Text style={styles.itemText}>Tutorials</Text>
         </TouchableOpacity>
         <View style={styles.separator} /> 
         <TouchableOpacity onPress={() => navigation.navigate('FAQ')} style={{ marginLeft: 15, marginTop: 20  }}>

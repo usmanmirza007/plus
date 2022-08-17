@@ -27,4 +27,12 @@ export const images = {
   videoIcon: require('../assets/images/videoIcon.webp'),
   whatsappLogo: require('../assets/images/whatsappLogo.png'),
   dotCircle: require('../assets/images/dotCircle.png'),
+  android: require('../assets/images/android.webp'),
+  ios: require('../assets/images/ios.webp'),
+  microsoftLogo: require('../assets/images/microsoftLogo.webp'),
+  enigma2: require('../assets/images/enigma2.webp'),
+  magBox: require('../assets/images/magBox.webp'),
+  tvRemote: require('../assets/images/tvRemote.webp'),
+  duplexPlay: require('../assets/images/duplexPlay.webp'),
+  dmcaProtectedLogo: require('../assets/images/dmcaProtectedLogo.png'),
 };

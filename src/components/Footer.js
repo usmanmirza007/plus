@@ -51,6 +51,15 @@ export const Footer = () => {
         <Text style={styles.text}>FAQ</Text>
       </TouchableOpacity>
       <Text style={styles.text}>© 2021 star-iPtv. All Rights Reserved</Text>
+      <Image
+          source={images.dmcaProtectedLogo}
+          style={{
+            height: 70,
+            width: 140,
+            resizeMode: 'stretch',
+            marginRight: 5,
+          }}
+        />
     </View>
   );
 };

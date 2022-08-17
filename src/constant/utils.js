@@ -182,3 +182,133 @@ export const subscriptionRewards = [
     desc: 'We offer in-depth tutorials and client support in live chat to make installation, and streaming amazingly quick and simple, no matter where you are in the world.',
   },
 ];
+
+export const tutorials = [
+  {
+    image: images.duplexPlay,
+    title: 'SAMSUNG AND LG',
+    question: 'How to setup IPTV on Smart TVs with IBO PLAYER app',
+    answer: `You can download IBO PLAYER from your TV store on Samsung, LG, … ${'\n\n'}After installation, open IBO PLAYER then you will find  MAC and KEY address on screen 
+    ${'\n\n'}Navigate to IBO PLAYER web portal ${'\n'}Open the set IPTV upload page via browser : https://iboplayer.com/device/login
+    ${'\n'}1-Enter Mac address ${'\n'}Enter your IBO device mac and key ${'\n\n'}2-Add playlist ${'\n\n'}3- Click save
+    ${'\n'}reboot SMART TV ${'\n\n'}same etape for duplex play ${'\n\n'}https://edit.duplexplay.com/`,
+  },
+  {
+    image: images.tvRemote,
+    title: 'FIRE TV STICK',
+    question: 'How to setup IPTV on Fire TV Stick',
+    answer: `From the home screen of your device, hover over the Find option.
+
+
+
+    2. Click Search.
+    
+    click search
+    
+    3. Search for and select Downloader.
+    
+    seach for and select downloader
+    
+    4. Choose the Downloader app.
+    
+    choose downloader
+    
+    5. Click Download.
+    
+    click download
+    
+    6. Wait for the app to install.
+    
+    wait for app to install
+    
+    7. Once the app finishes installing click Open.
+    
+    downloader ready to launch
+    
+    8. Return to the home screen and open Settings.
+    
+    open settings
+    
+    9. Click My Fire TV.
+    
+    click my fire tv
+    
+    10. Choose Developer options.
+    
+    choose developer options
+    
+    11. Click Install unknown apps.
+    
+    click install unknown apps
+    
+    12. Find the Downloader app and click it.
+    
+    find the downloader app and click
+    
+    13. This will turn Unknown Sources to On for the Downloader app. This will enable side-loading on your device.
+    
+    unknown sources now on
+    
+    14. Launch Downloader.
+    
+    launch downloader
+    
+    15. Click Allow.
+    
+    Click Allow
+    
+    16. Click OK.
+    
+    Click OK
+    
+    17. Type the following URL exactly as shown here: https://bit.ly/mainsmart and click Go.
+    
+    Smarters1
+    
+    18. Wait for file to download.
+    
+    wait for file to downlaod
+    
+    19. Click Install.
+    
+    click install
+    
+    20. Click Done.
+    
+    click done
+    
+    21. Open Iptv smarters then select Login with Xtream codes api.
+    
+     23. Enter the login details that we sent you via your email`,
+  },
+  {
+    image: images.android,
+    title: 'ANDROID',
+    question: 'How to setup IPTV on Smart TVs with Set IPTV app',
+    answer: 'We support all the IPTV boxes and android devices, Including MAG boxes and Formuler.',
+  },
+  {
+    image: images.ios,
+    title: 'APPLE / IOS',
+    question: 'How to setup IPTV on Apple/IOS with Iptv Smarters Player',
+    answer: 'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process.',
+  },
+  {
+    image: images.magBox,
+    title: 'MAG BOX',
+    question: 'How to setup IPTV on MAG BOX',
+    answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
+  },
+  {
+    image: images.microsoftLogo,
+    title: 'Microsoft Devices',
+    question: 'How to install XTREAM IPTV Player on Windows',
+    answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
+  },
+  {
+    image: images.enigma2,
+    title: 'ENIGMA 2',
+    question: 'How to Install ( IPTV.SH ) On ENIGMA 2',
+    answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
+  },
+];

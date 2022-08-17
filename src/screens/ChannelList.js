@@ -10,7 +10,6 @@ import { Header, Footer } from '../components';
 import { colors, fontFamily, images, WINDOW_HEIGHT } from '../constant';
 import commonStyle from '../constant/commonStyle';
 export const ChannelList = () => {
-  const [collapseState, setCollapseState] = useState(false);
 
   const data = [
     {
@@ -160,8 +159,10 @@ export const ChannelList = () => {
 
         <View style={{ backgroundColor: '#F6F6F6', marginTop: 40, marginHorizontal: 10, marginBottom: 50, ...commonStyle.shadow }}>
           {data.map((item, index) => {
+            const [collapseState, setCollapseState] = useState(false);
             return (
               <Collapse
+                key={index}
                 onToggle={() => setCollapseState(!collapseState)}
                 style={{
                   marginTop: 9,
@@ -192,6 +193,7 @@ export const ChannelList = () => {
                   {item.data.map((chl, index) => {
                     return (
                       <View
+                        key={index}
                         style={{
                           marginTop: 10,
                           flexDirection: 'row',

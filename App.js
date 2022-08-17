@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import SideMenu from './src/navigation/SideMenu';
-import { Home, ContactUs, ChannelList, Pricing, FAQ } from './src/screens';
+import { Home, ContactUs, ChannelList, Pricing, FAQ, Tutorial } from './src/screens';
 import { WhatsAppButton } from './src/components';
 
 const Stack = createStackNavigator();
@@ -39,6 +39,11 @@ const DrawerNavigation = () => (
     <Drawer.Screen
       name="FAQ"
       component={FAQ}
+      options={{ headerShown: false }}
+    />
+    <Drawer.Screen
+      name="Tutorial"
+      component={Tutorial}
       options={{ headerShown: false }}
     />
   </Drawer.Navigator>
