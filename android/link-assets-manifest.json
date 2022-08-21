@@ -26,19 +26,19 @@
       "sha1": "34486436c1bbdb300705d85dd6b59ce275b5d1c9"
     },
     {
-      "path": "src/assets/fonts/teko.light.ttf",
+      "path": "src/assets/fonts/Teko-Light.ttf",
       "sha1": "463bdec046b5636186a57af677fb7f2ca27120e8"
     },
     {
-      "path": "src/assets/fonts/teko.medium.ttf",
+      "path": "src/assets/fonts/Teko-Medium.ttf",
       "sha1": "703687fb7090a03119da866e3d8ac925dca0c097"
     },
     {
-      "path": "src/assets/fonts/teko.regular.ttf",
+      "path": "src/assets/fonts/Teko-Regular.ttf",
       "sha1": "3f234cf28089f0e07bf8ad28337385c17b9ac3f9"
     },
     {
-      "path": "src/assets/fonts/teko.semibold.ttf",
+      "path": "src/assets/fonts/Teko-SemiBold.ttf",
       "sha1": "d87f88c98ea7337b7d5361d524260a30efe2c031"
     }
   ]

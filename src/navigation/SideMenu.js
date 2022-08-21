@@ -42,7 +42,7 @@ const SideMenu = () => {
           <Text style={styles.itemText}>FAQ</Text>
         </TouchableOpacity>
         <View style={styles.separator} /> 
-        <TouchableOpacity onPress={() => navigation.navigate('')} style={{ marginLeft: 15, marginTop: 20  }}>
+        <TouchableOpacity onPress={() => navigation.navigate('Reseller')} style={{ marginLeft: 15, marginTop: 20  }}>
           <Text style={styles.itemText}>Reseller</Text>
         </TouchableOpacity>
         <View style={styles.separator} /> 

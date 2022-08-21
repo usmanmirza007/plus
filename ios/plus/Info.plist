@@ -58,11 +58,11 @@
 		<string>Poppins-Medium.ttf</string>
 		<string>Poppins-Regular.ttf</string>
 		<string>Poppins-SemiBold.ttf</string>
-		<string>teko.light.ttf</string>
-		<string>teko.medium.ttf</string>
-		<string>teko.regular.ttf</string>
-		<string>teko.semibold.ttf</string>
 		<string>Teko-Bold.ttf</string>
+		<string>Teko-Light.ttf</string>
+		<string>Teko-Medium.ttf</string>
+		<string>Teko-Regular.ttf</string>
+		<string>Teko-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

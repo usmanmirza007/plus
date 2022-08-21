@@ -19,11 +19,11 @@
 		AE921B58D5FE47B0BAD5236A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB1144C1B894DBFBDB0D80E /* Poppins-Medium.ttf */; };
 		0A6A75739B04459DB0B3C357 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4DC5A4C9EE54EED825C0ED3 /* Poppins-Regular.ttf */; };
 		40EAEFE59415402392F250A3 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD56EE985ED46948FBC328F /* Poppins-SemiBold.ttf */; };
-		D51B6D0497F2463CA6CE2E6C /* teko.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBABB47B3A47FAB849A048 /* teko.light.ttf */; };
-		008B29C96CAE42EE9429E76D /* teko.medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A937320AB3C42158271B201 /* teko.medium.ttf */; };
-		6BC19B01BFCD41728AFB571E /* teko.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7004BAAD702E4DA08D93B2C2 /* teko.regular.ttf */; };
-		F248CC7974F74A939118E0EA /* teko.semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7B6F24CD774BE7948BFC14 /* teko.semibold.ttf */; };
 		393527180FAA4FEEB1B9F40A /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52AF4ADE9F9847A09B15A143 /* Teko-Bold.ttf */; };
+		375C3D3BE9E34800888794D8 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3FBEE388F13459B82B4BB37 /* Teko-Light.ttf */; };
+		27476A0A66A1455794D17B67 /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C28E362744743E3AAB7549E /* Teko-Medium.ttf */; };
+		D8E9BC812C0F48FAA0A29285 /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 227828A1BE974021B8DEEE79 /* Teko-Regular.ttf */; };
+		F041C49508D5437FA7F07491 /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00590EC3758E476EAEF0951F /* Teko-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +59,11 @@
 		FAB1144C1B894DBFBDB0D80E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B4DC5A4C9EE54EED825C0ED3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		ECD56EE985ED46948FBC328F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3FCBABB47B3A47FAB849A048 /* teko.light.ttf */ = {isa = PBXFileReference; name = "teko.light.ttf"; path = "../src/assets/fonts/teko.light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0A937320AB3C42158271B201 /* teko.medium.ttf */ = {isa = PBXFileReference; name = "teko.medium.ttf"; path = "../src/assets/fonts/teko.medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7004BAAD702E4DA08D93B2C2 /* teko.regular.ttf */ = {isa = PBXFileReference; name = "teko.regular.ttf"; path = "../src/assets/fonts/teko.regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2F7B6F24CD774BE7948BFC14 /* teko.semibold.ttf */ = {isa = PBXFileReference; name = "teko.semibold.ttf"; path = "../src/assets/fonts/teko.semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		52AF4ADE9F9847A09B15A143 /* Teko-Bold.ttf */ = {isa = PBXFileReference; name = "Teko-Bold.ttf"; path = "../src/assets/fonts/Teko-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3FBEE388F13459B82B4BB37 /* Teko-Light.ttf */ = {isa = PBXFileReference; name = "Teko-Light.ttf"; path = "../src/assets/fonts/Teko-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3C28E362744743E3AAB7549E /* Teko-Medium.ttf */ = {isa = PBXFileReference; name = "Teko-Medium.ttf"; path = "../src/assets/fonts/Teko-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		227828A1BE974021B8DEEE79 /* Teko-Regular.ttf */ = {isa = PBXFileReference; name = "Teko-Regular.ttf"; path = "../src/assets/fonts/Teko-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		00590EC3758E476EAEF0951F /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; name = "Teko-SemiBold.ttf"; path = "../src/assets/fonts/Teko-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,11 +177,11 @@
 				FAB1144C1B894DBFBDB0D80E /* Poppins-Medium.ttf */,
 				B4DC5A4C9EE54EED825C0ED3 /* Poppins-Regular.ttf */,
 				ECD56EE985ED46948FBC328F /* Poppins-SemiBold.ttf */,
-				3FCBABB47B3A47FAB849A048 /* teko.light.ttf */,
-				0A937320AB3C42158271B201 /* teko.medium.ttf */,
-				7004BAAD702E4DA08D93B2C2 /* teko.regular.ttf */,
-				2F7B6F24CD774BE7948BFC14 /* teko.semibold.ttf */,
 				52AF4ADE9F9847A09B15A143 /* Teko-Bold.ttf */,
+				F3FBEE388F13459B82B4BB37 /* Teko-Light.ttf */,
+				3C28E362744743E3AAB7549E /* Teko-Medium.ttf */,
+				227828A1BE974021B8DEEE79 /* Teko-Regular.ttf */,
+				00590EC3758E476EAEF0951F /* Teko-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -288,11 +288,11 @@
 				AE921B58D5FE47B0BAD5236A /* Poppins-Medium.ttf in Resources */,
 				0A6A75739B04459DB0B3C357 /* Poppins-Regular.ttf in Resources */,
 				40EAEFE59415402392F250A3 /* Poppins-SemiBold.ttf in Resources */,
-				D51B6D0497F2463CA6CE2E6C /* teko.light.ttf in Resources */,
-				008B29C96CAE42EE9429E76D /* teko.medium.ttf in Resources */,
-				6BC19B01BFCD41728AFB571E /* teko.regular.ttf in Resources */,
-				F248CC7974F74A939118E0EA /* teko.semibold.ttf in Resources */,
 				393527180FAA4FEEB1B9F40A /* Teko-Bold.ttf in Resources */,
+				375C3D3BE9E34800888794D8 /* Teko-Light.ttf in Resources */,
+				27476A0A66A1455794D17B67 /* Teko-Medium.ttf in Resources */,
+				D8E9BC812C0F48FAA0A29285 /* Teko-Regular.ttf in Resources */,
+				F041C49508D5437FA7F07491 /* Teko-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

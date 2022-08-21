@@ -25,7 +25,7 @@ export const Home = () => {
   const navigation = useNavigation();
   return (
     <>
-      <Header image={images.menu} />
+      <Header />
       <ScrollView style={styles.container} showVerticalScrollIndicator={false}>
         <Image style={styles.mainImage} source={images.mainImage} />
         <View style={styles.mainView}>

@@ -198,88 +198,16 @@ export const tutorials = [
     title: 'FIRE TV STICK',
     question: 'How to setup IPTV on Fire TV Stick',
     answer: `From the home screen of your device, hover over the Find option.
-
-
-
-    2. Click Search.
-    
-    click search
-    
-    3. Search for and select Downloader.
-    
-    seach for and select downloader
-    
-    4. Choose the Downloader app.
-    
-    choose downloader
-    
-    5. Click Download.
-    
-    click download
-    
-    6. Wait for the app to install.
-    
-    wait for app to install
-    
-    7. Once the app finishes installing click Open.
-    
-    downloader ready to launch
-    
-    8. Return to the home screen and open Settings.
-    
-    open settings
-    
-    9. Click My Fire TV.
-    
-    click my fire tv
-    
-    10. Choose Developer options.
-    
-    choose developer options
-    
-    11. Click Install unknown apps.
-    
-    click install unknown apps
-    
-    12. Find the Downloader app and click it.
-    
-    find the downloader app and click
-    
-    13. This will turn Unknown Sources to On for the Downloader app. This will enable side-loading on your device.
-    
-    unknown sources now on
-    
-    14. Launch Downloader.
-    
-    launch downloader
-    
-    15. Click Allow.
-    
-    Click Allow
-    
-    16. Click OK.
-    
-    Click OK
-    
-    17. Type the following URL exactly as shown here: https://bit.ly/mainsmart and click Go.
-    
-    Smarters1
-    
-    18. Wait for file to download.
-    
-    wait for file to downlaod
-    
-    19. Click Install.
-    
-    click install
-    
-    20. Click Done.
-    
-    click done
-    
-    21. Open Iptv smarters then select Login with Xtream codes api.
-    
-     23. Enter the login details that we sent you via your email`,
+    ${'\n'}2. Click Search.${'\n\n'}click search${'\n\n'}3. Search for and select Downloader.${'\n\n'}seach for and select downloader${'\n\n'}4. Choose the Downloader app.
+    ${'\n'}choose downloader${'\n\n'}5. Click Download.${'\n\n'}click download${'\n\n'}6. Wait for the app to install.${'\n\n'}wait for app to install
+    ${'\n'}7. Once the app finishes installing click Open.${'\n\n'}downloader ready to launch${'\n\n'}8. Return to the home screen and open Settings${'\n\n'}open settings
+    ${'\n'}9. Click My Fire ${'\n\n'}click my fire${'\n\n'}10. Choose Developer options${'\n\n'}11. Click Install unknown ap
+    ${'\n'}click install unknown a${'\n\n'}12. Find the Downloader app and click ${'\n\n'}find the downloader app and cl
+    ${'\n'}13. This will turn Unknown Sources to On for the Downloader app. This will enable side-loading on your device.
+    ${'\n'}unknown sources now on${'\n\n'}14. Launch Downloader.${'\n\n'}launch downloader${'\n\n'}15. Click Allow.${'\n\n'}Click Allow${'\n\n'}16. Click OK.${'\n\n'}Click OK
+    ${'\n'}17. Type the following URL exactly as shown here: https://bit.ly/mainsmart and click Go.${'\n\n'}Smarters1${'\n\n'}18. Wait for file to download.
+    ${'\n'}wait for file to downlaod${'\n\n'}19. Click Install.${'\n\n'}click install${'\n\n'}20. Click Done.${'\n\n'}click done
+    ${'\n'}21. Open Iptv smarters then select Login with Xtream codes api.${'\n\n'}23. Enter the login details that we sent you via your email`,
   },
   {
     image: images.android,
