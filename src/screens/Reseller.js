@@ -7,7 +7,10 @@ import {
   fontFamily,
   WINDOW_HEIGHT,
   WINDOW_WIDTH,
+  resellerData1,
+  resellerPricingPlans,
   colors,
+  resellerData2,
 } from '../constant';
 import {
   Header,
@@ -79,9 +82,38 @@ export const Reseller = () => {
             leftIcon={images.whatsapp}
           />
 
-          {whyChooseUs.map(({ image, title, desc }, i) => (
-            <View style={styles.characteristicsView} key={i}>
-              <Image source={image} style={{ height: 60, width: 60 }} />
+          <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
+
+          <Text style={{ color: '#8300E9', fontSize: 30, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
+            HOW DOES IPTV PANEL WORK?
+          </Text>
+
+          <Text style={{ color: '#3A3A3A', fontSize: 25, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
+            Credit Points Calculation
+          </Text>
+
+          <Text style={{ color: '#3A3A3A', fontSize: 18, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
+            in our Reseller Panel the Credit works are used as below:
+            {'\n'}1 Month Subscription = 1 Credit Points.
+            {'\n'}3 Months Subscription = 3 Credit Points.
+            {'\n'}6 Months Subscription = 6 Credit Points.
+            {'\n'}1 Year Subscription = 12 Credit Points.
+          </Text>
+
+          <Text style={{ color: '#3A3A3A', fontSize: 25, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
+            How many Credit Points will you get?
+          </Text>
+
+          <Text style={{ color: '#3A3A3A', fontSize: 18, fontFamily: fontFamily.poppins.semibold, textAlign: 'center', marginTop: 20 }}>
+            300 $ = 120 Credit Points.
+            {'\n'}600$ = 240 Credit Points.
+            {'\n'}900 $= 360 Credit Points.
+            {'\n'}1250 $ = 600 Credit Points.
+          </Text>
+
+          {resellerData1.map(({ image, title, desc }, i) => (
+            <View style={[styles.characteristicsView, commonStyle.shadow, { paddingVertical: 20, borderWidth: 2, marginTop: 20 }]} key={i}>
+              <Image source={image} style={{ height: 100, width: 100 }} />
               <Text style={[styles.subHeading, { marginTop: 15 }]}>{title}</Text>
               <Text
                 style={{
@@ -95,26 +127,25 @@ export const Reseller = () => {
               </Text>
             </View>
           ))}
-          <View style={{ marginVertical: 50, marginHorizontal: 20 }}>
-            <Text style={styles.primaryHeading}>
-              WHICH SUBSCRIPTION PLAN IS RIGHT FOR YOU?
+          
+          <View style={{ marginVertical: 50, marginHorizontal: 10 }}>
+            <Text style={{fontSize: 43, fontFamily: fontFamily.teko.semibold, color: colors.primaryBlack, textAlign: 'center'}}>
+              Plans & Features
             </Text>
-            <View style={styles.separator} />
-            {pricingPlan.map((plan, i) => (
+            <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
+            {resellerPricingPlans.map((plan, i) => (
               <View
                 key={i}
                 style={[
                   commonStyle.shadow,
                   {
-                    borderRadius: 15,
                     overflow: 'hidden',
                     marginTop: 20,
-                    backgroundColor: colors.white,
+                    backgroundColor: colors.darkPurple,
                   },
                 ]}>
                 <View
                   style={{
-                    backgroundColor: plan.homeColor,
                     paddingBottom: 5,
                   }}>
                   <Text
@@ -125,7 +156,7 @@ export const Reseller = () => {
                       fontFamily: fontFamily.poppins.medium,
                       marginTop: 20,
                     }}>
-                    {plan.duration}
+                    {plan.points} CREDIT POINTS
                   </Text>
                   <Text
                     style={{
@@ -144,14 +175,12 @@ export const Reseller = () => {
                     flexDirection: 'row',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    borderBottomWidth: 1,
-                    borderColor: colors.gray,
                   }}>
                   <Text
                     style={{
                       fontFamily: fontFamily.poppins.medium,
                       fontSize: 20,
-                      color: plan.homeColor,
+                      color: colors.white,
                       marginTop: -35,
                     }}>
                     $
@@ -160,9 +189,18 @@ export const Reseller = () => {
                     style={{
                       fontFamily: fontFamily.poppins.medium,
                       fontSize: 50,
-                      color: plan.homeColor,
+                      color: colors.white,
                     }}>
                     {plan.price}
+                  </Text>
+                  <Text
+                    style={{
+                      fontFamily: fontFamily.poppins.regular,
+                      fontSize: 14,
+                      color: colors.white,
+                      marginTop: 25,
+                    }}>
+                    / {plan.duration}
                   </Text>
                 </View>
                 <View style={{ paddingHorizontal: 15 }}>
@@ -180,7 +218,7 @@ export const Reseller = () => {
                       />
                       <Text
                         style={{
-                          color: colors.darkGray,
+                          color: colors.white,
                           fontFamily: fontFamily.poppins.semibold,
                           fontSize: 14,
                           marginLeft: 7,
@@ -194,190 +232,62 @@ export const Reseller = () => {
                   style={{
                     marginTop: 25,
                     marginBottom: 15,
-                    backgroundColor: plan.homeColor,
+                    backgroundColor: '#4328B7',
+                    borderRadius: 0,
                   }}
-                  text={'SUBSCRIBE NOW'}
+                  text={'CONTACT US'}
                   textStyle={{ fontSize: 14 }}
                 />
               </View>
             ))}
           </View>
-          <View
-            style={{
-              backgroundColor: colors.blue,
-              marginVertical: 50,
-              paddingVertical: 20,
-            }}>
-            <Text
-              style={{
-                textAlign: 'center',
-                fontSize: 27,
-                fontFamily: fontFamily.poppins.semibold,
-                color: colors.white,
-                margin: 10,
-                lineHeight: 30,
-              }}>
-              How to Setup IPTV on your Device
+
+          <Text style={{fontSize: 43, fontFamily: fontFamily.teko.regular, color: colors.primaryBlack, textAlign: 'center', marginTop: 50 }}>
+          STAR-ITV IPTV RESELLER
             </Text>
-            <Button text="TUTORIAL" rightIcon={images.roundedPlayIcon} />
-          </View>
-          <View
-            style={{
-              margin: 10,
-              paddingHorizontal: 5,
-              borderRadius: 25,
-              backgroundColor: colors.white,
-              ...commonStyle.shadow,
-            }}>
-            <Text
-              style={{
-                fontSize: 14,
-                fontFamily: fontFamily.poppins.medium,
-                color: colors.darkGray,
-              }}>
+
+            <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
+
+          <Text style={{ color: '#333333', fontSize: 15, fontFamily: fontFamily.poppins.semibold, textAlign: 'center', marginTop: 20 }}>
+          At Star-itv, we believe that we provide the best IPTV Resellers prices.
+            {'\n'}Moreover, our IPTV Panel is very easy to access and use.
+            {'\n\n'}In Addition, you don’t need any equipment to become IPTV Reseller, you can access your own panel and activate the IPTV subscriptions using your Smartphone or your Laptop.
+            {'\n'}Working in IPTV Industry is very easy, flexible working whenever and wherever you want.
+            {'\n'}Nevertheless, we have worldwide premium Live TV Channels and VOD.
+          </Text>
+
+          <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
+
+          <Text style={{ color: '#8300E9', fontSize: 30, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
+          THE CHEAPEST IPTV RESELLERS PRICES
+          </Text>
+
+          <Text style={{ color: '#333333', fontSize: 15, fontFamily: fontFamily.poppins.semibold, textAlign: 'center', marginTop: 20 }}>
+          Moreover, you can target clients all over the world, for example, Arabs who are interested in the UK, USA, Europe, Asia, Latin, America, Africa.
+          </Text>
+          
+          {resellerData2.map(({ image, title, desc }, i) => (
+            <View style={styles.characteristicsView} key={i}>
+              <View style={{ height: 45, width: 45, backgroundColor: '#C5DFFF', borderRadius: 25, justifyContent: 'center', alignItems: 'center',}}>
+                <Image source={image} style={{ height: 30, width: 30, tintColor: colors.blue }} />
+              </View>
+              <Text style={[styles.subHeading, { marginTop: 20 }]}>{title}</Text>
               <Text
                 style={{
-                  color: colors.lightBlue,
-                  fontFamily: fontFamily.poppins.bold,
+                  fontSize: 16,
+                  marginHorizontal: 10,
+                  marginTop: 10,
+                  textAlign: 'center',
+                  fontFamily: fontFamily.poppins.medium,
+                  color: colors.darkGray,
                 }}>
-                Star-iptv
+                {desc}
               </Text>
-              , Best IPTV Provider
-            </Text>
-          </View>
-          <View style={{ paddingHorizontal: 10 }}>
-            <Text
-              style={{
-                color: colors.black,
-                fontFamily: fontFamily.poppins.bold,
-                fontSize: 50,
-                marginTop: 20,
-              }}>
-              #1 IPTV
-            </Text>
-            <Text
-              style={{
-                color: colors.black,
-                fontFamily: fontFamily.poppins.bold,
-                fontSize: 18,
-                marginTop: 20,
-              }}>
-              Join now and watch our Service on any device!
-            </Text>
-            <Text
-              style={{
-                color: colors.darkGray,
-                fontFamily: fontFamily.poppins.medium,
-                fontSize: 14,
-                marginTop: 20,
-              }}>
-              Watch your favorite Movies, TV Series and Live TV channels without
-              any extra cost, as part of your{' '}
-              <Text style={{ fontWeight: '700' }}>star-iptv</Text> subscription!{' '}
-              {'\n\n'}
-              Great Entertainment for Everyone.
-            </Text>
-          </View>
-          <Image
-            source={images.movies}
-            style={{
-              height: WINDOW_HEIGHT * 0.34,
-              width: WINDOW_WIDTH,
-              resizeMode: 'contain',
-              marginTop: 35,
-            }}
-          />
-          <View style={{ padding: 10, marginTop: 50 }}>
-            <Image
-              source={images.production}
-              style={{
-                height: WINDOW_HEIGHT * 0.34,
-                width: WINDOW_WIDTH,
-                resizeMode: 'contain',
-              }}
-            />
-            <Text
-              style={{
-                color: colors.blue,
-                fontFamily: fontFamily.poppins.bold,
-                fontSize: 22,
-                marginTop: 15,
-                textAlign: 'center',
-              }}>
-              SPORTS - MOVIES - SERIES
-            </Text>
-            <Text
-              style={{
-                color: colors.primaryBlack,
-                fontFamily: fontFamily.poppins.medium,
-                fontSize: 14,
-                textAlign: 'center',
-              }}>
-              With star-itv you can watch what you want, whenever you want, the
-              biggest events in sports, the best movies and TV series.
-            </Text>
-          </View>
-          <View style={{ padding: 10, marginTop: 50 }}>
-            <Image
-              source={images.family}
-              style={{
-                height: WINDOW_HEIGHT * 0.34,
-                width: WINDOW_WIDTH,
-                resizeMode: 'contain',
-              }}
-            />
-            <Text
-              style={{
-                color: colors.blue,
-                fontFamily: fontFamily.poppins.bold,
-                fontSize: 22,
-                marginTop: 15,
-                textAlign: 'center',
-              }}>
-              FAMILY AND KIDS
-            </Text>
-            <Text
-              style={{
-                color: colors.primaryBlack,
-                fontFamily: fontFamily.poppins.medium,
-                fontSize: 14,
-                textAlign: 'center',
-              }}>
-              With star-itv there’s something for everyone in your home. you can
-              enjoy watching kid-friendly shows and family movies with your Kids.
-            </Text>
-          </View>
-          <View style={{ padding: 10 }}>
-            <Text
-              style={{
-                color: colors.blue,
-                fontFamily: fontFamily.poppins.bold,
-                fontSize: 22,
-                marginTop: 15,
-                textAlign: 'center',
-              }}>
-              ALL THE DEVICES ARE SUPPORTED
-            </Text>
-            <Text
-              style={{
-                color: colors.primaryBlack,
-                fontFamily: fontFamily.poppins.medium,
-                fontSize: 14,
-                textAlign: 'center',
-              }}>
-              Now you can watch live TV & VOD at home or on-the-go — wherever you
-              are, anytime, on your favorite devices.
-            </Text>
-            <Image
-              source={images.mobileDevices}
-              style={{
-                height: WINDOW_HEIGHT * 0.2,
-                width: WINDOW_WIDTH - 20,
-                resizeMode: 'contain',
-              }}
-            />
-          </View>
+            </View>
+          ))}
         </View>
+
+        <View style={{marginTop: 60}} />
 
         <Footer />
       </ScrollView>
@@ -412,6 +322,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   characteristicsView: {
+    marginTop: 40,
     paddingVertical: 10,
     alignItems: 'center',
   },

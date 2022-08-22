@@ -240,3 +240,121 @@ export const tutorials = [
     answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
   },
 ];
+
+export const resellerData1 = [
+  {
+    image: images.lcd,
+    title: 'COMPATIBILITY WITH ALL DEVICES',
+    desc: 'Our IPTV Server supports all devices (check them below). Devices that aren’t listed can always be supported on request.',
+  },
+  {
+    image: images.video,
+    title: 'VIDEO ON DEMAND',
+    desc: 'You will get access to over 54 000 premium worldwide TV channels, and watch them in 4K, Ultra HD and HD Quality.',
+  },
+  {
+    image: images.emailIcon,
+    title: 'FAST SUPPORT',
+    desc: 'Our support service is available 24/7, all you have to do is contact us to answer any of your questions!',
+  },
+];
+
+export const resellerPricingPlans = [
+  {
+    duration: '10 YEARS',
+    plan: 'IPTV RESELLER PLAN',
+    price: 300,
+    points: 120,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    duration: '20 YEARS',
+    plan: 'IPTV RESELLER PLAN',
+    price: 600,
+    points: 240,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    duration: '30 YEARS',
+    plan: 'IPTV RESELLER PLAN',
+    price: 900,
+    points: 360,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+  {
+    duration: '50 YEARS',
+    plan: 'IPTV RESELLER PLAN',
+    price: 1250,
+    points: 600,
+    features: [
+      '+154,000 TV Channels, Movies & Series',
+      '4K / Ultra HD / HD Picture Quality',
+      'Catch Up / EPG For All Channels',
+      '99.9% Server Uptime',
+      'Free Channels & VOD Updates',
+      'Anti Freeze System',
+      'All Devices are Supported',
+      '24/7 Technical Assistance',
+    ],
+  },
+];
+
+export const resellerData2 = [
+  {
+    image: images.lcd,
+    title: '54 000+ World Channels',
+    desc: 'Get full access to over 54 000 TV Channels and never miss any of your favorite TV Shows or Sport Games.',
+  },
+  {
+    image: images.checkIcon,
+    title: 'Fast Support 24/7',
+    desc: 'Once you subscribed for ONE IPTV servcie, we are with you until the end. Just contact us for your questions.',
+  },
+  {
+    image: images.tubeIcon,
+    title: 'Secure purchase',
+    desc: 'By selecting “Get Service” you will be redirected to payment page and you would choose your desired payment method.',
+  },
+  {
+    image: images.tvIcon,
+    title: 'Continuously Updating',
+    desc: 'We Continuously monitor lines to fix the problem and adding new TV channels and VODs to list.',
+  },
+  {
+    image: images.linkIcon,
+    title: 'Flexible Tariff Plans',
+    desc: 'You can pick from 1 month to 12 months of service in best price. Compare ONE IPTV with Others.',
+  },
+  {
+    image: images.privacyIcon,
+    title: 'Instant Activation!',
+    desc: 'A few moments after your order the service will be ready and you get full access to all features.',
+  },
+];
