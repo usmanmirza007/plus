@@ -2,8 +2,6 @@ import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
 import React from 'react';
 import {
   images,
-  whyChooseUs,
-  pricingPlan,
   fontFamily,
   WINDOW_HEIGHT,
   WINDOW_WIDTH,
@@ -28,42 +26,42 @@ export const Reseller = () => {
       <ScrollView style={styles.container} showVerticalScrollIndicator={false}>
         <View style={{ padding: 10 }}>
           <Text style={[styles.primaryHeading, { marginTop: 50 }]}>
-            Advantages of becoming IPTV Reseller
+            Advantages of becoming A-Plus TV Reseller
           </Text>
 
           <View style={styles.separator} />
 
           <Text style={{ fontFamily: fontFamily.poppins.regular, fontSize: 14, color: '#7A7A7A', textAlign: 'center' }}>
-            Become our iptv reseller start making extra money !
+            Become our A-Plus TV reseller start making extra money !
           </Text>
 
           <Text style={styles.heading}>
-            DISCOVER THE EASY WAY TO MAKE MONEY BY BECOMING IPTV RESELLER
+            DISCOVER THE EASY WAY TO MAKE MONEY BY BECOMING A-Plus TV RESELLER
           </Text>
 
           <Text style={styles.description}>
-            Do you know that more than 50 millions people in the world are using IPTV services? So why don’t you start your own iptv business and make more than €2,000 per month .
+            Do you know that more than 50 millions people in the world are using A-Plus TV services? So why don’t you start your own A-Plus TV business and make more than €2,000 per month .
           </Text>
 
           <Text style={styles.heading}>
-            What is meant by IPTV Reseller?
+            What is meant by A-Plus TV Reseller?
           </Text>
 
           <Text style={styles.description}>
-            So, What is meant by IPTV Reseller? he is the person who gets IPTV Panel to create and sell IPTV Subscription to his clients, through your IPTV Panel you can create Free Trial, 1 month, 3 Months, 6 Months and 1 Year IPTV Subscriptions.
+            So, What is meant by A-Plus TV Reseller? he is the person who gets A-Plus TV Panel to create and sell A-Plus TV Subscription to his clients, through your A-Plus TV Panel you can create Free Trial, 1 month, 3 Months, 6 Months and 1 Year A-Plus TV Subscriptions.
           </Text>
 
           <Text style={styles.description}>
-            Basically, IPTV Resellers Panel work through something called Credit Points. {'\n\n'} Credit Points are used to activate the IPTV Subscriptions.
+            Basically, A-Plus TV Resellers Panel work through something called Credit Points. {'\n\n'} Credit Points are used to activate the A-Plus TV Subscriptions.
           </Text>
 
           <Text style={styles.heading}>
-            HOW TO START MAKING MONEY WITH DAILY IPTV RESELLER ?
+            HOW TO START MAKING MONEY WITH DAILY A-Plus TV RESELLER ?
           </Text>
 
           <Text style={styles.description}>
-            Simply. Register for a reseller account and then advertise our service to your neighbors, family users, online forums & social media or build your own website & sell our IPTV service with your own service name to thousands of people online.
-            {'\n\n'}For making this more clear and easy to understand I open up an example:  The clients buy IPTV service for 1 year in 80$, but you buy 1 year means 1 credit (30 $) from us, and sell it 80$ or as you wish (good benefit). So the conclusion of this explanation is 1 credit is for 1 year and each credit is 30$
+            Simply. Register for a reseller account and then advertise our service to your neighbors, family users, online forums & social media or build your own website & sell our A-Plus TV service with your own service name to thousands of people online.
+            {'\n\n'}For making this more clear and easy to understand I open up an example:  The clients buy A-Plus TV service for 1 year in 80$, but you buy 1 year means 1 credit (30 $) from us, and sell it 80$ or as you wish (good benefit). So the conclusion of this explanation is 1 credit is for 1 year and each credit is 30$
             {'\n\n'}Now, how you can start to be a reseller?
             {'\n'}Answer: You should get at least 120 credits ( 300) to start your own business under your own brand name.
           </Text>
@@ -85,7 +83,7 @@ export const Reseller = () => {
           <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
 
           <Text style={{ color: '#8300E9', fontSize: 30, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
-            HOW DOES IPTV PANEL WORK?
+            HOW DOES A-Plus TV PANEL WORK?
           </Text>
 
           <Text style={{ color: '#3A3A3A', fontSize: 25, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
@@ -243,23 +241,23 @@ export const Reseller = () => {
           </View>
 
           <Text style={{fontSize: 43, fontFamily: fontFamily.teko.regular, color: colors.primaryBlack, textAlign: 'center', marginTop: 50 }}>
-          STAR-ITV IPTV RESELLER
+          A-Plus TV A-Plus TV RESELLER
             </Text>
 
             <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
 
           <Text style={{ color: '#333333', fontSize: 15, fontFamily: fontFamily.poppins.semibold, textAlign: 'center', marginTop: 20 }}>
-          At Star-itv, we believe that we provide the best IPTV Resellers prices.
-            {'\n'}Moreover, our IPTV Panel is very easy to access and use.
-            {'\n\n'}In Addition, you don’t need any equipment to become IPTV Reseller, you can access your own panel and activate the IPTV subscriptions using your Smartphone or your Laptop.
-            {'\n'}Working in IPTV Industry is very easy, flexible working whenever and wherever you want.
+          At A-Plus TV, we believe that we provide the best A-Plus TV Resellers prices.
+            {'\n'}Moreover, our A-Plus TV Panel is very easy to access and use.
+            {'\n\n'}In Addition, you don’t need any equipment to become A-Plus TV Reseller, you can access your own panel and activate the A-Plus TV subscriptions using your Smartphone or your Laptop.
+            {'\n'}Working in A-Plus TV Industry is very easy, flexible working whenever and wherever you want.
             {'\n'}Nevertheless, we have worldwide premium Live TV Channels and VOD.
           </Text>
 
           <View style={[styles.separator, { backgroundColor: '#4328B7' }]} />
 
           <Text style={{ color: '#8300E9', fontSize: 30, fontFamily: fontFamily.poppins.bold, textAlign: 'center', marginTop: 20 }}>
-          THE CHEAPEST IPTV RESELLERS PRICES
+          THE CHEAPEST A-Plus TV RESELLERS PRICES
           </Text>
 
           <Text style={{ color: '#333333', fontSize: 15, fontFamily: fontFamily.poppins.semibold, textAlign: 'center', marginTop: 20 }}>

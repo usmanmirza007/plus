@@ -22,7 +22,7 @@ export const Footer = () => {
         />
         <View>
           <Text style={[styles.text, { textDecorationLine: 'underline' }]}>
-            admin@star-iptv.com
+            admin@a-plus-tv.com
           </Text>
           <Text style={[styles.text, { marginTop: 0 }]}>We reply within 1h</Text>
         </View>
@@ -50,7 +50,7 @@ export const Footer = () => {
       <TouchableOpacity onPress={() => navigation.navigate('FAQ')}>
         <Text style={styles.text}>FAQ</Text>
       </TouchableOpacity>
-      <Text style={styles.text}>© 2021 star-iPtv. All Rights Reserved</Text>
+      <Text style={styles.text}>© 2021 A-Plus TV. All Rights Reserved</Text>
       <Image
           source={images.dmcaProtectedLogo}
           style={{

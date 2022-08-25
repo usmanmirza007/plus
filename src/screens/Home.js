@@ -30,7 +30,7 @@ export const Home = () => {
         <Image style={styles.mainImage} source={images.mainImage} />
         <View style={styles.mainView}>
           <Text style={[styles.heading, {color: colors.white}]}>
-            BEST IPTV SERVER PROVIDER
+            BEST A-Plus TV SERVER PROVIDER
           </Text>
           <Text
             style={{
@@ -194,7 +194,7 @@ export const Home = () => {
               margin: 10,
               lineHeight: 30,
             }}>
-            How to Setup IPTV on your Device
+            How to Setup A-Plus TV on your Device
           </Text>
           <Button text="TUTORIAL" rightIcon={images.roundedPlayIcon} />
         </View>
@@ -217,9 +217,9 @@ export const Home = () => {
                 color: colors.lightBlue,
                 fontFamily: fontFamily.poppins.bold,
               }}>
-              Star-iptv
+              A-Plus TV
             </Text>
-            , Best IPTV Provider
+            , Best A-Plus TV Provider
           </Text>
         </View>
         <View style={{paddingHorizontal: 10}}>
@@ -230,7 +230,7 @@ export const Home = () => {
               fontSize: 50,
               marginTop: 20,
             }}>
-            #1 IPTV
+            #1 A-Plus TV
           </Text>
           <Text
             style={{
@@ -250,7 +250,7 @@ export const Home = () => {
             }}>
             Watch your favorite Movies, TV Series and Live TV channels without
             any extra cost, as part of your{' '}
-            <Text style={{fontWeight: '700'}}>star-iptv</Text> subscription!{' '}
+            <Text style={{fontWeight: '700'}}>A-Plus TV</Text> subscription!{' '}
             {'\n\n'}
             Great Entertainment for Everyone.
           </Text>
@@ -290,7 +290,7 @@ export const Home = () => {
               fontSize: 14,
               textAlign: 'center',
             }}>
-            With star-itv you can watch what you want, whenever you want, the
+            With A-Plus TV you can watch what you want, whenever you want, the
             biggest events in sports, the best movies and TV series.
           </Text>
         </View>
@@ -320,7 +320,7 @@ export const Home = () => {
               fontSize: 14,
               textAlign: 'center',
             }}>
-            With star-itv there’s something for everyone in your home. you can
+            With A-Plus TV there’s something for everyone in your home. you can
             enjoy watching kid-friendly shows and family movies with your Kids.
           </Text>
         </View>

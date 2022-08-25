@@ -44,7 +44,7 @@ export const Header = () => {
             color: colors.white,
             marginLeft: 5,
           }}>
-          admin@star-iptv.com
+          admin@a-plus-tv.com
         </Text>
       </View>
       <View

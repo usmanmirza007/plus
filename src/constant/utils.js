@@ -5,12 +5,12 @@ export const whyChooseUs = [
   {
     image: images.progressIcon,
     title: '100% SATISFACTION GUARANTEED',
-    desc: 'We offer you a fast IPTV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
+    desc: 'We offer you a fast A-Plus TV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
   },
   {
     image: images.checkIcon,
-    title: 'IPTV PREMIUM STREAMING',
-    desc: 'Your IPTV subscription offers you live premium worldwide TV channels. No need to look anywhere else, everything is there: Sport, Entertainment, Kids Channels, News, VOD, Films, TV series ..etc.',
+    title: 'A-Plus TV PREMIUM STREAMING',
+    desc: 'Your A-Plus TV subscription offers you live premium worldwide TV channels. No need to look anywhere else, everything is there: Sport, Entertainment, Kids Channels, News, VOD, Films, TV series ..etc.',
   },
   {
     image: images.tubeIcon,
@@ -25,12 +25,12 @@ export const whyChooseUs = [
   {
     image: images.linkIcon,
     title: 'COMPATIBILITY',
-    desc: 'Our IPTV server support all the TV boxes : Android, Smart Tv, Mag Box, Firestick, IOS, Windows and Mac OS, . All devices can be supported on request.',
+    desc: 'Our A-Plus TV server support all the TV boxes : Android, Smart Tv, Mag Box, Firestick, IOS, Windows and Mac OS, . All devices can be supported on request.',
   },
   {
     image: images.privacyIcon,
     title: '100% Satisfaction Guaranteed',
-    desc: 'We offer you a fast IPTV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
+    desc: 'We offer you a fast A-Plus TV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
   },
 ];
 
@@ -39,7 +39,7 @@ export const pricingPlan = [
     homeColor: colors.primaryBlack,
     pricingColor: colors.secondaryPurple,
     duration: '1 MONTH',
-    plan: 'IPTV BASIC PLAN',
+    plan: 'A-Plus TV BASIC PLAN',
     price: 14,
     features: [
       '+154,000 TV Channels, Movies & Series',
@@ -56,7 +56,7 @@ export const pricingPlan = [
     homeColor: colors.blue,
     pricingColor: colors.lightGreen,
     duration: '3 MONTHS',
-    plan: 'IPTV STANDARD PLAN',
+    plan: 'A-Plus TV STANDARD PLAN',
     price: 25,
     features: [
       '+154,000 TV Channels, Movies & Series',
@@ -73,7 +73,7 @@ export const pricingPlan = [
     homeColor: colors.purple,
     pricingColor: colors.primaryPurple,
     duration: '6 MONTHS',
-    plan: 'IPTV SUPER PLAN',
+    plan: 'A-Plus TV SUPER PLAN',
     price: 40,
     features: [
       '+154,000 TV Channels, Movies & Series',
@@ -90,7 +90,7 @@ export const pricingPlan = [
     homeColor: colors.green,
     pricingColor: colors.yellow,
     duration: '1 YEAR',
-    plan: 'IPTV PREMIUM PLAN',
+    plan: 'A-Plus TV PREMIUM PLAN',
     price: 60,
     features: [
       '+154,000 TV Channels, Movies & Series',
@@ -106,11 +106,11 @@ export const pricingPlan = [
 ];
 export const feedbacks = [
   {
-    text: 'I am extremely pleased with the service provided by star-itv and their excellent customer service team pointed me in the right direction when I did not completely understand how to set up the service on my Amazon Fire-stick with Stbemu app. Many Many THANKS..',
+    text: 'I am extremely pleased with the service provided by A-Plus TV and their excellent customer service team pointed me in the right direction when I did not completely understand how to set up the service on my Amazon Fire-stick with Stbemu app. Many Many THANKS..',
     user: 'Ana Brown',
   },
   {
-    text: 'Super!!! Super communication with the support, IPTV login received in a few minutes with the explanation for the installation.',
+    text: 'Super!!! Super communication with the support, A-Plus TV login received in a few minutes with the explanation for the installation.',
     user: 'David McCan',
   },
   {
@@ -121,19 +121,19 @@ export const feedbacks = [
 
 export const faqs = [
   {
-    question: 'How to setup IPTV on my device?',
+    question: 'How to setup A-Plus TV on my device?',
     answer:
-      'It is very easy to connect IPTV. Follow the tutorial page, chat with us or send an email, our agents will help you set it up on your device.',
+      'It is very easy to connect A-Plus TV. Follow the tutorial page, chat with us or send an email, our agents will help you set it up on your device.',
   },
   {
-    question: 'How long will it take to receive my IPTV login info?',
+    question: 'How long will it take to receive my A-Plus TV login info?',
     answer:
       'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process.',
   },
   {
-    question: 'What devices does IPTV support?',
+    question: 'What devices does A-Plus TV support?',
     answer:
-      'Our IPTV server support all the TV boxes :Android, Smart Tv, IOS, Windows and Mac OS, Mag Box, Firestick …, All devices can be supported on request.',
+      'Our A-Plus TV server support all the TV boxes :Android, Smart Tv, IOS, Windows and Mac OS, Mag Box, Firestick …, All devices can be supported on request.',
   },
   {
     question: 'What content do you supply?',
@@ -145,7 +145,7 @@ export const faqs = [
 export const faqs2 = [
   {
     question: 'What does the package include?',
-    answer: 'When you subscribe to star-itv, you get login credentials to IPTV server with instructions for how to setup it on your device.',
+    answer: 'When you subscribe to A-Plus TV, you get login credentials to A-Plus TV server with instructions for how to setup it on your device.',
   },
   {
     question: 'What is the typical response time for a support question?',
@@ -153,7 +153,7 @@ export const faqs2 = [
   },
   {
     question: 'What devices do you support?',
-    answer: 'We support all the IPTV boxes and android devices, Including MAG boxes and Formuler.',
+    answer: 'We support all the A-Plus TV boxes and android devices, Including MAG boxes and Formuler.',
   },
   {
     question: 'How long will it take to receive my order?',
@@ -168,13 +168,13 @@ export const faqs2 = [
 export const subscriptionRewards = [
   {
     image: images.videoIcon,
-    title: 'IPTV Premium Streaming',
-    desc: 'Your IPTV subscription offers you live premium worldwide TV channels. No need to look anywhere else, everything is there: Sport, Entertainment, Kids Channels, News, VOD, Films, TV series.',
+    title: 'A-Plus TV Premium Streaming',
+    desc: 'Your A-Plus TV subscription offers you live premium worldwide TV channels. No need to look anywhere else, everything is there: Sport, Entertainment, Kids Channels, News, VOD, Films, TV series.',
   },
   {
     image: images.rewardIcon,
     title: '100% Satisfaction Guaranteed',
-    desc: 'We offer you a fast IPTV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
+    desc: 'We offer you a fast A-Plus TV server ranked as one of the best in Uk and Europe. A stable server with a high bandwidth and Anti Freezing Technology. We also offer a fast order delivery service using email.',
   },
   {
     image: images.roundedBulbIcon,
@@ -187,16 +187,16 @@ export const tutorials = [
   {
     image: images.duplexPlay,
     title: 'SAMSUNG AND LG',
-    question: 'How to setup IPTV on Smart TVs with IBO PLAYER app',
+    question: 'How to setup A-Plus TV on Smart TVs with IBO PLAYER app',
     answer: `You can download IBO PLAYER from your TV store on Samsung, LG, … ${'\n\n'}After installation, open IBO PLAYER then you will find  MAC and KEY address on screen 
-    ${'\n\n'}Navigate to IBO PLAYER web portal ${'\n'}Open the set IPTV upload page via browser : https://iboplayer.com/device/login
+    ${'\n\n'}Navigate to IBO PLAYER web portal ${'\n'}Open the set A-Plus TV upload page via browser : https://iboplayer.com/device/login
     ${'\n'}1-Enter Mac address ${'\n'}Enter your IBO device mac and key ${'\n\n'}2-Add playlist ${'\n\n'}3- Click save
     ${'\n'}reboot SMART TV ${'\n\n'}same etape for duplex play ${'\n\n'}https://edit.duplexplay.com/`,
   },
   {
     image: images.tvRemote,
     title: 'FIRE TV STICK',
-    question: 'How to setup IPTV on Fire TV Stick',
+    question: 'How to setup A-Plus TV on Fire TV Stick',
     answer: `From the home screen of your device, hover over the Find option.
     ${'\n'}2. Click Search.${'\n\n'}click search${'\n\n'}3. Search for and select Downloader.${'\n\n'}seach for and select downloader${'\n\n'}4. Choose the Downloader app.
     ${'\n'}choose downloader${'\n\n'}5. Click Download.${'\n\n'}click download${'\n\n'}6. Wait for the app to install.${'\n\n'}wait for app to install
@@ -207,36 +207,36 @@ export const tutorials = [
     ${'\n'}unknown sources now on${'\n\n'}14. Launch Downloader.${'\n\n'}launch downloader${'\n\n'}15. Click Allow.${'\n\n'}Click Allow${'\n\n'}16. Click OK.${'\n\n'}Click OK
     ${'\n'}17. Type the following URL exactly as shown here: https://bit.ly/mainsmart and click Go.${'\n\n'}Smarters1${'\n\n'}18. Wait for file to download.
     ${'\n'}wait for file to downlaod${'\n\n'}19. Click Install.${'\n\n'}click install${'\n\n'}20. Click Done.${'\n\n'}click done
-    ${'\n'}21. Open Iptv smarters then select Login with Xtream codes api.${'\n\n'}23. Enter the login details that we sent you via your email`,
+    ${'\n'}21. Open A-Plus TV smarters then select Login with Xtream codes api.${'\n\n'}23. Enter the login details that we sent you via your email`,
   },
   {
     image: images.android,
     title: 'ANDROID',
-    question: 'How to setup IPTV on Smart TVs with Set IPTV app',
-    answer: 'We support all the IPTV boxes and android devices, Including MAG boxes and Formuler.',
+    question: 'How to setup A-Plus TV on Smart TVs with Set A-Plus TV app',
+    answer: 'We support all the A-Plus TV boxes and android devices, Including MAG boxes and Formuler.',
   },
   {
     image: images.ios,
     title: 'APPLE / IOS',
-    question: 'How to setup IPTV on Apple/IOS with Iptv Smarters Player',
+    question: 'How to setup A-Plus TV on Apple/IOS with A-Plus TV Smarters Player',
     answer: 'We aim to email you within 5min – 1 hour of purchase to arrange setup of your order. Please note during busy periods at evenings and weekends orders may take up to 2 hours to process.',
   },
   {
     image: images.magBox,
     title: 'MAG BOX',
-    question: 'How to setup IPTV on MAG BOX',
+    question: 'How to setup A-Plus TV on MAG BOX',
     answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
   },
   {
     image: images.microsoftLogo,
     title: 'Microsoft Devices',
-    question: 'How to install XTREAM IPTV Player on Windows',
+    question: 'How to install XTREAM A-Plus TV Player on Windows',
     answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
   },
   {
     image: images.enigma2,
     title: 'ENIGMA 2',
-    question: 'How to Install ( IPTV.SH ) On ENIGMA 2',
+    question: 'How to Install ( A-Plus TV.SH ) On ENIGMA 2',
     answer: 'We offer a full range of UK, USA, European and Asian channels, movies and TV shows with Catch Up & EPG (Electronic Program Guide) features in 4K / Ultra HD / HD quality.',
   },
 ];
@@ -245,7 +245,7 @@ export const resellerData1 = [
   {
     image: images.lcd,
     title: 'COMPATIBILITY WITH ALL DEVICES',
-    desc: 'Our IPTV Server supports all devices (check them below). Devices that aren’t listed can always be supported on request.',
+    desc: 'Our A-Plus TV Server supports all devices (check them below). Devices that aren’t listed can always be supported on request.',
   },
   {
     image: images.video,
@@ -262,7 +262,7 @@ export const resellerData1 = [
 export const resellerPricingPlans = [
   {
     duration: '10 YEARS',
-    plan: 'IPTV RESELLER PLAN',
+    plan: 'A-Plus TV RESELLER PLAN',
     price: 300,
     points: 120,
     features: [
@@ -278,7 +278,7 @@ export const resellerPricingPlans = [
   },
   {
     duration: '20 YEARS',
-    plan: 'IPTV RESELLER PLAN',
+    plan: 'A-Plus TV RESELLER PLAN',
     price: 600,
     points: 240,
     features: [
@@ -294,7 +294,7 @@ export const resellerPricingPlans = [
   },
   {
     duration: '30 YEARS',
-    plan: 'IPTV RESELLER PLAN',
+    plan: 'A-Plus TV RESELLER PLAN',
     price: 900,
     points: 360,
     features: [
@@ -310,7 +310,7 @@ export const resellerPricingPlans = [
   },
   {
     duration: '50 YEARS',
-    plan: 'IPTV RESELLER PLAN',
+    plan: 'A-Plus TV RESELLER PLAN',
     price: 1250,
     points: 600,
     features: [
@@ -335,7 +335,7 @@ export const resellerData2 = [
   {
     image: images.checkIcon,
     title: 'Fast Support 24/7',
-    desc: 'Once you subscribed for ONE IPTV servcie, we are with you until the end. Just contact us for your questions.',
+    desc: 'Once you subscribed for ONE A-Plus TV servcie, we are with you until the end. Just contact us for your questions.',
   },
   {
     image: images.tubeIcon,
@@ -350,7 +350,7 @@ export const resellerData2 = [
   {
     image: images.linkIcon,
     title: 'Flexible Tariff Plans',
-    desc: 'You can pick from 1 month to 12 months of service in best price. Compare ONE IPTV with Others.',
+    desc: 'You can pick from 1 month to 12 months of service in best price. Compare ONE A-Plus TV with Others.',
   },
   {
     image: images.privacyIcon,

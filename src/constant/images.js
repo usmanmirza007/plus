@@ -1,5 +1,5 @@
 export const images = {
-  appLogo1: require('../assets/images/appLogo.jpeg'),
+  appLogo1: require('../assets/images/appLogo1.jpeg'),
   appLogo: require('../assets/images/appLogo.png'),
   starLogo: require('../assets/images/star4.png'),
   family: require('../assets/images/family.png'),

@@ -47,10 +47,10 @@ export const FAQ = () => {
         onPress={() => navigation.navigate('ContactUs')}
         />
 
-        <Text style={styles.heading}>Who are star-itv</Text>
+        <Text style={styles.heading}>Who are A-Plus TV</Text>
 
         <Text style={styles.text}>
-          star-itv is an online streaming worldwide IPTV subscription service provider with fast activation and no setup fees. covering all your day-to-day devices. Our team supplies solid TV services to various countries around the world. Our experienced network engineers deliver high-quality digital media streaming to our loyal customers. Our strong support team and technical expertise have allowed us to be the best IPTV service provider available worldwide.
+          A-Plus TV is an online streaming worldwide A-Plus TV subscription service provider with fast activation and no setup fees. covering all your day-to-day devices. Our team supplies solid TV services to various countries around the world. Our experienced network engineers deliver high-quality digital media streaming to our loyal customers. Our strong support team and technical expertise have allowed us to be the best A-Plus TV service provider available worldwide.
           Your services are usually activated within 5min – 1 hour of ordering however may take up to 2 hours during busy periods.
           If you have any questions feel free to contact our live chat team who are happy to help
         </Text>
@@ -58,7 +58,7 @@ export const FAQ = () => {
         <Text style={styles.heading}>What do we offer</Text>
 
         <Text style={styles.text}>
-          Our company provides TV subscription services straight to your device through the internet. This includes Smart TV Samsung & LG, PC, Mac, Apple iPhone, iPad, Apple TV 4 & 5, Amazon Firestick, IPTV box, Android phones, and tablets, Android box, MAG, STB Emulator.
+          Our company provides TV subscription services straight to your device through the internet. This includes Smart TV Samsung & LG, PC, Mac, Apple iPhone, iPad, Apple TV 4 & 5, Amazon Firestick, A-Plus TV box, Android phones, and tablets, Android box, MAG, STB Emulator.
           We give customers direct exclusive access to +54000 4K/Ultra HD channels and video on demand, ranging from sports, movies and popular TV shows to netflix, amazon prime and Disney+
         </Text>
 

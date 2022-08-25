@@ -101,7 +101,7 @@ export const ContactUs = () => {
                   color: colors.white,
                   marginTop: 20,
                 }}>
-                admin@star-iptv.com
+                admin@a-plus-tv.com
               </Text>
               <Text
                 style={{

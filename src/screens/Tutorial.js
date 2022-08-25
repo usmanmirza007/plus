@@ -29,7 +29,7 @@ export const Tutorial = () => {
         <View style={{ backgroundColor: colors.white, paddingBottom: 50, padding: 10 }}>
           <View style={{ backgroundColor: colors.white, marginTop: -100, padding: 10, }}>
             <Text style={{ fontSize: 30, fontFamily: fontFamily.teko.bold, color: colors.primaryBlack, textAlign: 'center', marginTop: 30 }}>
-              HOW TO SETUP THE IPTV ON YOUR DEVICE
+              HOW TO SETUP THE A-Plus TV ON YOUR DEVICE
             </Text>
             {tutorials.map((tutorial, i) => (
             <View key={i} style={{ width: WINDOW_WIDTH - 40, alignItems: 'center', marginTop: 50}}>
