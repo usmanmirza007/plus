@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Text, Image } from 'react-native';
-import {
-  Collapse,
-  CollapseHeader,
-  CollapseBody,
-} from 'accordion-collapse-react-native';
+import { Collapse, CollapseHeader, CollapseBody } from 'accordion-collapse-react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Header, Footer } from '../components';
 import { colors, fontFamily, images, WINDOW_HEIGHT } from '../constant';
@@ -143,8 +139,6 @@ export const ChannelList = () => {
         'channel3',
       ]
     },
-
-
   ]
   return (
     <>
@@ -214,13 +208,12 @@ export const ChannelList = () => {
 
                 </CollapseBody>
               </Collapse>
-
             )
           })}
         </View>
         <Footer />
+        
       </ScrollView>
-
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   StyleSheet,
@@ -10,12 +10,10 @@ import { Header, Footer, CustomCollapse } from '../components';
 import {
   colors,
   fontFamily,
-  images,
   WINDOW_HEIGHT,
   WINDOW_WIDTH,
   tutorials,
 } from '../constant';
-import commonStyle from '../constant/commonStyle';
 export const Tutorial = () => {
   return (
     <>
@@ -32,17 +30,17 @@ export const Tutorial = () => {
               HOW TO SETUP THE A-Plus TV ON YOUR DEVICE
             </Text>
             {tutorials.map((tutorial, i) => (
-            <View key={i} style={{ width: WINDOW_WIDTH - 40, alignItems: 'center', marginTop: 50}}>
-              <Image source={tutorial.image} style={{ height: 40, width: 40, resizeMode: 'contain'}} />
-              <Text style={{ fontSize: 17, fontFamily: fontFamily.poppins.bold, color: colors.black, marginTop: 15 }}>{tutorial.title}</Text>
-              <CustomCollapse
-                title={tutorial.question}
-                content={tutorial.answer}
-                style={{ width: WINDOW_WIDTH - 40, borderRadius: 0, backgroundColor: '#EFEFEF', paddingHorizontal: 15, paddingVertical: 12 }}
-                iconStyle={{ tintColor: colors.black }}
-              />
-            </View>
-          ))}
+              <View key={i} style={{ width: WINDOW_WIDTH - 40, alignItems: 'center', marginTop: 50 }}>
+                <Image source={tutorial.image} style={{ height: 40, width: 40, resizeMode: 'contain' }} />
+                <Text style={{ fontSize: 17, fontFamily: fontFamily.poppins.bold, color: colors.black, marginTop: 15 }}>{tutorial.title}</Text>
+                <CustomCollapse
+                  title={tutorial.question}
+                  content={tutorial.answer}
+                  style={{ width: WINDOW_WIDTH - 40, borderRadius: 0, backgroundColor: '#EFEFEF', paddingHorizontal: 15, paddingVertical: 12 }}
+                  iconStyle={{ tintColor: colors.black }}
+                />
+              </View>
+            ))}
           </View>
         </View>
         <Footer />

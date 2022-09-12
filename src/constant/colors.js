@@ -1,6 +1,7 @@
 export const colors = {
   gradientPurple: ['#8300E9', '#FFFFFF00'],
   black: '#333333',
+  secondaryBlack: '#111111',
   primaryBlack: '#000000',
   lightBlue: '#0693E3',
   blue: '#0C71C3',
@@ -20,4 +21,7 @@ export const colors = {
   secondaryGray: '#848484',
   primaryGray: '#707070',
   yellow: '#EDD900',
+  focus: '#133296',
+  error: '#e2401c',
+  blur: '#d1d5db'
 };

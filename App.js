@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import SideMenu from './src/navigation/SideMenu';
-import { Home, ContactUs, ChannelList, Pricing, FAQ, Tutorial, Reseller } from './src/screens';
+import { Home, ContactUs, ChannelList, Pricing, FAQ, Tutorial, Reseller, Payment } from './src/screens';
 import { WhatsAppButton } from './src/components';
 
 const Stack = createStackNavigator();
@@ -64,6 +64,14 @@ const HomeStack = () => (
         headerShown: false,
       }}
     />
+    <Stack.Screen
+      name="Payment"
+      component={Payment}
+      options={{
+        animationEnabled: false,
+        headerShown: false,
+      }}
+    />
   </Stack.Navigator>
 );
 
@@ -71,7 +79,7 @@ export default () => {
   return (
     <>
       <NavigationContainer>
-        <DrawerNavigation />
+        <HomeStack />
       </NavigationContainer>
       <WhatsAppButton />
     </>

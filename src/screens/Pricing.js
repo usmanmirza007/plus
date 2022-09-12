@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import {
   View,
@@ -17,6 +18,7 @@ import {
 } from '../constant';
 import commonStyle from '../constant/commonStyle';
 export const Pricing = () => {
+  const navigation = useNavigation();
   return (
     <>
       <Header />
@@ -122,6 +124,7 @@ export const Pricing = () => {
                   }}
                   text={'SUBSCRIBE NOW'}
                   textStyle={{ fontSize: 16, fontFamily: fontFamily.poppins.bold }}
+                  onPress={() => navigation.navigate('Payment')}
                 />
               </View>
             ))}
