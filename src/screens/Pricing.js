@@ -124,7 +124,7 @@ export const Pricing = () => {
                   }}
                   text={'SUBSCRIBE NOW'}
                   textStyle={{ fontSize: 16, fontFamily: fontFamily.poppins.bold }}
-                  onPress={() => navigation.navigate('Payment')}
+                  onPress={() => navigation.navigate('Payment', {planDuration: plan.duration, planPrice: plan.price})}
                 />
               </View>
             ))}

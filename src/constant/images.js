@@ -37,4 +37,9 @@ export const images = {
   dmcaProtectedLogo: require('../assets/images/dmcaProtectedLogo.png'),
   lcd: require('../assets/images/lcd.png'),
   video: require('../assets/images/video.webp'),
+  lock: require('../assets/images/lock.webp'),
+  checkbox: require('../assets/images/checkbox.png'),
+  checkboxActive: require('../assets/images/checkboxActive.png'),
+  stripeLogo: require('../assets/images/stripeLogo.jpeg'),
+  arraowDown: require('../assets/images/arrowDown.png'),
 };

@@ -7,3 +7,5 @@ export {GetStarted} from './GetStarted';
 export {Header} from './Header';
 export {Footer} from './Footer';
 export {WhatsAppButton} from './WhatsAppButton';
+export {TextInputWrapper} from './TextInputWrapper';
+export {DropdownWrapper} from './DropdownWrapper';
