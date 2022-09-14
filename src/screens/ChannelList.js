@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Image } from 'react-native';
 import { Collapse, CollapseHeader, CollapseBody } from 'accordion-collapse-react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Header, Footer } from '../components';
-import { colors, fontFamily, images, WINDOW_HEIGHT } from '../constant';
+import { colors, fontFamily, images, WINDOW_HEIGHT, channelsList } from '../constant';
 import commonStyle from '../constant/commonStyle';
 export const ChannelList = () => {
 
@@ -152,7 +152,7 @@ export const ChannelList = () => {
         <Text style={{ marginHorizontal: 20, fontSize: 14, fontFamily: fontFamily.poppins.regular, marginTop: 20, color: colors.darkGray, textAlign: 'center' }}>All channels with this icon on the list support the time shift</Text>
 
         <View style={{ backgroundColor: '#F6F6F6', marginTop: 40, marginHorizontal: 10, marginBottom: 50, ...commonStyle.shadow }}>
-          {data.map((item, index) => {
+          {channelsList.map((item, index) => {
             const [collapseState, setCollapseState] = useState(false);
             return (
               <Collapse
@@ -184,7 +184,7 @@ export const ChannelList = () => {
                   </View>
                 </CollapseHeader>
                 <CollapseBody>
-                  {item.data.map((chl, index) => {
+                  {item.channels.map((chl, index) => {
                     return (
                       <View
                         key={index}

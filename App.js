@@ -7,6 +7,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import SideMenu from './src/navigation/SideMenu';
 import { Home, ContactUs, ChannelList, Pricing, FAQ, Tutorial, Reseller, Payment } from './src/screens';
 import { WhatsAppButton } from './src/components';
+import RNBootSplash from "react-native-bootsplash";
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -78,7 +79,7 @@ const HomeStack = () => (
 export default () => {
   return (
     <>
-      <NavigationContainer>
+      <NavigationContainer onReady={() => RNBootSplash.hide({ fade: true })}>
         <HomeStack />
       </NavigationContainer>
       <WhatsAppButton />

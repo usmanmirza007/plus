@@ -56,7 +56,8 @@ export const Header = () => {
           height: 70,
           paddingHorizontal: 20,
         }}>
-        <Image
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <Image
           source={images.appLogo}
           resizeMode={'contain'}
           style={{
@@ -64,6 +65,8 @@ export const Header = () => {
             height: WINDOW_HEIGHT * 0.08,
           }}
         />
+        <Text style={{ fontSize: 26, fontFamily: fontFamily.teko.bold, color: colors.black, marginLeft: 5 }}>A-Plus TV</Text>
+          </View>
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
           <Image
             source={images.menu}

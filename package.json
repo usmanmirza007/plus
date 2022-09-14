@@ -17,6 +17,7 @@
     "accordion-collapse-react-native": "^1.1.1",
     "react": "18.0.0",
     "react-native": "0.69.3",
+    "react-native-bootsplash": "^4.3.2",
     "react-native-dropdown-picker": "^5.4.2",
     "react-native-gesture-handler": "^2.5.0",
     "react-native-linear-gradient": "^2.6.2",

@@ -9,4 +9,5 @@ export {
 export {fontFamily} from './fonts';
 export {colors} from './colors';
 export {images} from './images';
+export {channelsList} from './channelsList';
 export {whyChooseUs, pricingPlan, feedbacks, faqs, faqs2, subscriptionRewards, tutorials, resellerData1, resellerData2, resellerPricingPlans} from './utils';
