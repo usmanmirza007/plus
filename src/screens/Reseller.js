@@ -235,6 +235,7 @@ export const Reseller = () => {
                   }}
                   text={'CONTACT US'}
                   textStyle={{ fontSize: 14 }}
+                  onPress={() => navigation.navigate('ContactUs')}
                 />
               </View>
             ))}
