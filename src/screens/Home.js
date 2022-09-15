@@ -175,7 +175,7 @@ export const Home = () => {
                 }}
                 text={'SUBSCRIBE NOW'}
                 textStyle={{fontSize: 14}}
-                onPress={() => navigation.navigate('Payment')}
+                onPress={() => navigation.navigate('Payment', {planDuration: plan.duration, planPrice: plan.price})}
               />
             </View>
           ))}
